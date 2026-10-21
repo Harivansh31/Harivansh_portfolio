@@ -6,7 +6,7 @@
 
 import { initHelmetRiderReveal } from './reveal.js';
 import { initAllParticleTypography } from './particle-typography.js';
-import { initWaveBackground } from './wave-background.js';
+import { initWireframeCarpet } from './wireframe-carpet.js';
 import { initModals } from './modals.js';
 import { initRecruiterAssistant } from './recruiter-ai.js';
 import { initAllAnimatedBackgrounds } from './animated-background.js';
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Initialize Interactive Particle Typography Headings (Hero + Data Analytics, AI & Automation, Dev & Tools, Eng & IoT)
   initAllParticleTypography();
 
-  // 3. Initialize 3D Silk Particle-Wave Wireframe Mesh Background
-  initWaveBackground('particleCanvas');
+  // 3. Initialize 3D Floating Curved Wireframe Carpet Mesh Background (Reference Image Design)
+  initWireframeCarpet('particleCanvas');
 
   // 4. Initialize 3D Animated Holographic Data Analytics Orb Centerpiece (Reference Image Layout)
   initAnalyticsOrb('analyticsOrbCanvas', 'analyticsOrbContainer');
