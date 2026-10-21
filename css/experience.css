@@ -1,0 +1,623 @@
+/* ========================================================
+   HARIVANSH VATS - EXPERIENCE & VIRTUAL SIMULATIONS
+   Futuristic Split-Card Timeline & Certificate Verification System
+   Theme: Silver-White & Cool-Grey on Deep Black/Charcoal
+   ======================================================== */
+
+/* Experience Section Root Container */
+#experience {
+  position: relative;
+  padding: 6.5rem 0 5rem 0;
+  overflow: hidden;
+}
+
+
+
+/* --------------------------------------------------------
+   2. EXPERIENCE TIMELINE — SPLIT-CARD ARCHITECTURE
+   -------------------------------------------------------- */
+.exp-timeline-wrapper {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 3rem; /* Space for glowing spine and nodes */
+}
+
+/* Vertical Continuous Glowing Timeline Spine */
+.exp-timeline-spine {
+  position: absolute;
+  top: 15px;
+  bottom: 25px;
+  left: 14px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(225, 231, 240, 0.7) 0%,
+    rgba(139, 155, 180, 0.45) 45%,
+    rgba(52, 60, 73, 0.6) 85%,
+    transparent 100%
+  );
+  box-shadow: 0 0 10px rgba(139, 155, 180, 0.25);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Staggered Timeline Item */
+.exp-timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.exp-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline Node Anchor */
+.exp-timeline-node {
+  position: absolute;
+  top: 36px;
+  left: -3rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #090B0F;
+  border: 2px solid var(--border-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-timeline-node-core {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ambient-glow);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Node Connector Arm */
+.exp-timeline-arm {
+  position: absolute;
+  top: 50px;
+  left: calc(-3rem + 28px);
+  width: 22px;
+  height: 2px;
+  background: linear-gradient(to right, var(--border-medium), var(--border-subtle));
+  z-index: 1;
+  transition: background 0.45s ease;
+}
+
+/* Active Node State when Card is Scrolled into View */
+.exp-timeline-item.is-active .exp-timeline-node {
+  border-color: var(--subtle-highlight);
+  box-shadow: 0 0 20px rgba(225, 231, 240, 0.5), 0 0 8px rgba(139, 155, 180, 0.7);
+  transform: scale(1.15);
+}
+
+.exp-timeline-item.is-active .exp-timeline-node-core {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px #FFFFFF;
+}
+
+.exp-timeline-item.is-active .exp-timeline-arm {
+  background: linear-gradient(to right, var(--subtle-highlight), var(--border-medium));
+}
+
+/* --------------------------------------------------------
+   3. SPLIT-CARD CONTAINER & REGIONS
+   -------------------------------------------------------- */
+.exp-split-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-split-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-bright);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65), 0 0 28px rgba(139, 155, 180, 0.2);
+}
+
+/* --- LEFT REGION: MEDIA VISUAL --- */
+.exp-card-media {
+  position: relative;
+  min-height: 260px;
+  background: #090B0F;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.exp-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.85) contrast(1.08);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+.exp-split-card:hover .exp-card-img {
+  transform: scale(1.06);
+  filter: brightness(0.96) contrast(1.12);
+}
+
+/* Specific framing adjustments for each real experience image */
+#exp-item-bharatcares .exp-card-img {
+  object-position: center 45%;
+}
+
+#exp-item-deloitte .exp-card-img {
+  object-position: center 12%;
+}
+
+#exp-item-leadership .exp-card-img {
+  object-position: center 32%;
+}
+
+.exp-card-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 11, 15, 0.4) 0%,
+    rgba(9, 11, 15, 0.1) 40%,
+    rgba(9, 11, 15, 0.88) 100%
+  );
+  pointer-events: none;
+}
+
+.exp-category-pill {
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-medium);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exp-category-pill-indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--subtle-highlight);
+  box-shadow: 0 0 6px var(--subtle-highlight);
+}
+
+.exp-media-caption {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  background: rgba(9, 11, 15, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(52, 60, 73, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* --- RIGHT REGION: CONTENT & BULLETS --- */
+.exp-card-content {
+  padding: 2.25rem 2.25rem 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exp-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.exp-role-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.exp-period-pill {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--subtle-highlight);
+  background: rgba(17, 21, 28, 0.95);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.exp-company-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--ambient-glow);
+  margin-bottom: 1.25rem;
+}
+
+.exp-company-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--subtle-highlight);
+  flex-shrink: 0;
+}
+
+/* Concise Accurate Bullets */
+.exp-bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.exp-bullet-item {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.exp-bullet-item::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--subtle-highlight);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.exp-bullet-item strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Skills Chips */
+.exp-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(52, 60, 73, 0.45);
+}
+
+.exp-tech-chip {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  background: rgba(17, 21, 28, 0.75);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all var(--transition-fast);
+}
+
+.exp-split-card:hover .exp-tech-chip {
+  border-color: rgba(139, 155, 180, 0.35);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------
+   INLINE CERTIFICATE BAR ON EXPERIENCE SPLIT CARDS
+   -------------------------------------------------------- */
+.exp-card-cert-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  padding: 0.95rem 1.15rem;
+  margin-top: 1.25rem;
+  background: rgba(17, 21, 28, 0.7);
+  border: 1px solid rgba(139, 155, 180, 0.22);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
+}
+
+.exp-split-card:hover .exp-card-cert-bar {
+  border-color: rgba(139, 155, 180, 0.4);
+  background: rgba(26, 32, 42, 0.85);
+}
+
+.exp-cert-badge-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--subtle-highlight);
+  letter-spacing: 0.04em;
+}
+
+.exp-cert-badge-icon {
+  width: 15px;
+  height: 15px;
+  color: var(--subtle-highlight);
+  flex-shrink: 0;
+}
+
+.exp-cert-actions {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+/* Certificate Actions Buttons */
+
+.btn-cert-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-cert-primary {
+  background: var(--text-primary);
+  color: #000000;
+  border: 1px solid var(--text-primary);
+}
+
+.btn-cert-primary:hover {
+  background: var(--subtle-highlight);
+  border-color: var(--subtle-highlight);
+  box-shadow: 0 0 14px rgba(225, 231, 240, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-cert-secondary {
+  background: rgba(17, 21, 28, 0.8);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-cert-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.btn-cert-verify {
+  background: transparent;
+  color: var(--subtle-highlight);
+  border: 1px dashed var(--border-medium);
+}
+
+.btn-cert-verify:hover {
+  background: rgba(139, 155, 180, 0.12);
+  border-color: var(--subtle-highlight);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------
+   5. DEDICATED HIGH-RES CERTIFICATE VIEWER MODAL
+   -------------------------------------------------------- */
+.cert-modal-viewport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cert-modal-header {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(52, 60, 73, 0.45);
+}
+
+.cert-modal-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--subtle-highlight);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.cert-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+}
+
+.cert-modal-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.cert-modal-meta-item strong {
+  color: #FFFFFF;
+}
+
+.cert-modal-preview-stage {
+  position: relative;
+  width: 100%;
+  max-height: 65vh;
+  min-height: 380px;
+  background: #05070A;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.cert-modal-full-img {
+  max-width: 100%;
+  max-height: 62vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.cert-modal-full-img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.cert-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(52, 60, 73, 0.45);
+}
+
+/* --------------------------------------------------------
+   6. RESPONSIVE ADAPTATIONS
+   -------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .exp-split-card {
+    grid-template-columns: 290px 1fr;
+  }
+  .exp-card-content {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #experience {
+    padding: 4.5rem 0 3.5rem 0;
+  }
+
+  .exp-timeline-wrapper {
+    padding-left: 2.25rem;
+  }
+
+  .exp-timeline-spine {
+    left: 10px;
+  }
+
+  .exp-timeline-node {
+    left: -2.25rem;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+  }
+
+  .exp-timeline-node-core {
+    width: 8px;
+    height: 8px;
+  }
+
+  .exp-timeline-arm {
+    display: none;
+  }
+
+  .exp-split-card {
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
+  }
+
+  .exp-card-media {
+    min-height: 190px;
+    height: 190px;
+  }
+
+  .exp-card-content {
+    padding: 1.5rem;
+  }
+
+  .exp-role-title {
+    font-size: 1.15rem;
+  }
+
+  .exp-card-cert-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem;
+  }
+
+  .exp-cert-actions {
+    width: 100%;
+  }
+
+  .exp-cert-actions .btn-cert-action {
+    flex: 1 1 auto;
+    font-size: 0.76rem;
+    padding: 7px 12px;
+  }
+
+  .cert-modal-full-img {
+    max-height: 50vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exp-hero-img-layer,
+  .exp-card-img,
+  .exp-split-card,
+  .cert-card-v2,
+  .exp-timeline-node {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

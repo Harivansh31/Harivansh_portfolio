@@ -1,0 +1,423 @@
+/* Reset & Core Setup */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: clip;
+  position: relative;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sticky Navigation Header Scroll Offset: Ensures Section Headers Are Never Hidden */
+section[id],
+.section[id],
+#home,
+#about,
+#skills,
+#projects,
+#experience,
+#certificates,
+#contact {
+  scroll-margin-top: calc(var(--header-height) + 1.25rem);
+}
+
+/* Reduced Motion Preference Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Pure Black Minimalist Background & 3D Wave Staging */
+.ambient-glow {
+  display: none !important;
+}
+
+/* Minimalist Deep Black Background Overlay */
+.cyber-bg-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: #000000;
+}
+
+/* Organic Micro Film Grain Texture (Senior Dev Craftsmanship) */
+.cyber-noise-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Cybernetic Particle & HUD Canvas */
+#particleCanvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* ========================================================
+   SUBTLE FUTURISTIC VIEWPORT HUD FRAMING
+   Thin framing brackets & scroll telemetry readout
+   ======================================================== */
+.cyber-hud-frame {
+  display: none !important;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.hud-corner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--neon-emerald);
+  opacity: 0.28;
+  transition: opacity var(--transition-smooth);
+}
+
+.hud-corner-tl {
+  top: 96px; /* below sticky header */
+  left: 24px;
+}
+
+.hud-corner-tr {
+  top: 96px;
+  right: 24px;
+  flex-direction: row-reverse;
+}
+
+.hud-corner-bl {
+  bottom: 24px;
+  left: 24px;
+}
+
+.hud-corner-br {
+  bottom: 24px;
+  right: 24px;
+  flex-direction: row-reverse;
+}
+
+.hud-bracket {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--neon-emerald);
+}
+
+.hud-corner-tl .hud-bracket {
+  border-right: none;
+  border-bottom: none;
+}
+
+.hud-corner-tr .hud-bracket {
+  border-left: none;
+  border-bottom: none;
+}
+
+.hud-corner-bl .hud-bracket {
+  border-right: none;
+  border-top: none;
+}
+
+.hud-corner-br .hud-bracket {
+  border-left: none;
+  border-top: none;
+}
+
+.hud-label {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Right Edge Minimalist Scroll Telemetry Rail */
+.hud-scroll-telemetry {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.32;
+}
+
+.telemetry-track {
+  width: 2px;
+  height: 100px;
+  background: #343C49;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.telemetry-thumb {
+  width: 100%;
+  height: 20px;
+  background: var(--text-primary);
+  box-shadow: 0 0 8px rgba(225, 231, 240, 0.6);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.telemetry-readout {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .hud-corner {
+    display: none;
+  }
+  .hud-scroll-telemetry {
+    display: none;
+  }
+}
+/* App Container */
+.app-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Typography Utilities */
+.neon-text {
+  color: var(--text-primary);
+  text-shadow: 0 0 14px rgba(225, 231, 240, 0.45);
+}
+
+.cyan-text {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 14px rgba(139, 155, 180, 0.4);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 30%, #E1E7F0 70%, #8B9BB4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section Header Styles */
+.section-header {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--neon-cyan);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.section-tag::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--text-primary);
+  box-shadow: 0 0 8px rgba(225, 231, 240, 0.6);
+  border-radius: 2px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 155, 180, 0.35);
+  border-radius: 4px;
+  border: 1px solid #343C49;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(191, 199, 213, 0.55);
+  box-shadow: 0 0 10px rgba(139, 155, 180, 0.45);
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(139, 155, 180, 0.35);
+  color: #FFFFFF;
+}
+
+/* ========================================================
+   ANIMATED BACKGROUND (Motion Primitives inspired)
+   Layout-aware gliding spring background component
+   ======================================================== */
+
+.animated-motion-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, width, height, opacity;
+  box-sizing: border-box;
+  transition: transform 0.32s cubic-bezier(0.2, 0.95, 0.3, 1.15),
+              width 0.32s cubic-bezier(0.2, 0.95, 0.3, 1.15),
+              height 0.32s cubic-bezier(0.2, 0.95, 0.3, 1.15),
+              opacity 0.22s ease,
+              border-radius 0.25s ease;
+}
+
+/* 1. Nav Pill Glider (AnimatedTabsHover) */
+.animated-bg-nav {
+  z-index: 1;
+  background: rgba(26, 32, 42, 0.85);
+  border: 1px solid rgba(139, 155, 180, 0.4);
+  box-shadow: 0 0 16px rgba(139, 155, 180, 0.2), inset 0 0 8px rgba(225, 231, 240, 0.1);
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* 2. Filter Tabs Glider */
+.animated-bg-filter {
+  z-index: 1;
+  background: #1A202A;
+  border: 1.5px solid #8B9BB4;
+  box-shadow: 0 0 20px rgba(139, 155, 180, 0.3), inset 0 0 12px rgba(225, 231, 240, 0.15);
+  border-radius: 9999px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 3. Cards Shared Spring Aura (About, Skills, Projects, Certificates) */
+.animated-bg-card {
+  z-index: 0;
+  background: radial-gradient(circle at center, rgba(139, 155, 180, 0.16) 0%, rgba(225, 231, 240, 0.04) 55%, transparent 100%), #0D1117;
+  border: 1.5px solid #343C49;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.85), 0 0 30px rgba(139, 155, 180, 0.22);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* 4. Hero Logo Cards Glider */
+.animated-bg-logo {
+  z-index: 0;
+  background: #11151C;
+  border: 1.5px solid #343C49;
+  box-shadow: 0 0 20px rgba(139, 155, 180, 0.25), inset 0 0 10px rgba(225, 231, 240, 0.1);
+  border-radius: 12px;
+}
+
+/* Card interactive spring lift & cursor spotlight tracking */
+.about-feature-card,
+.skill-category-card,
+.project-card,
+.certificate-card {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.32s cubic-bezier(0.2, 0.95, 0.3, 1.15),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              background-color 0.25s ease;
+}
+
+.about-feature-card:hover,
+.skill-category-card:hover,
+.project-card:hover,
+.certificate-card:hover {
+  transform: translateY(-4px) scale(1.015);
+}
+
+/* Dynamic Spotlight Follower inside cards */
+.about-feature-card::after,
+.skill-category-card::after,
+.project-card::after,
+.certificate-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(350px circle at var(--card-mouse-x, -500px) var(--card-mouse-y, -500px), rgba(139, 155, 180, 0.12), transparent 80%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 1;
+}
+
+.about-feature-card:hover::after,
+.skill-category-card:hover::after,
+.project-card:hover::after,
+.certificate-card:hover::after {
+  opacity: 1;
+}
+

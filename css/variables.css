@@ -1,0 +1,70 @@
+:root {
+  /* ========================================================
+     SILVER WHITE + COOL GREY THEME PALETTE
+     ======================================================== */
+  --bg-primary: #000000;
+  --bg-secondary: #11151C;
+  --bg-card: #0D1117;
+  --bg-card-hover: #1A202A;
+  --bg-glass: rgba(17, 21, 28, 0.75);
+  --bg-surface: #11151C;
+  --hover-bg: #1A202A;
+
+  /* Silver, White & Ambient Cool-Grey Accents */
+  --neon-emerald: #E1E7F0;          /* Subtle Silver Highlight */
+  --neon-green-bright: #FFFFFF;     /* Pure White Accent */
+  --neon-cyan: #8B9BB4;             /* Cool-Grey Ambient Glow & Secondary Accent */
+  --neon-teal: #BFC7D5;             /* Secondary Silver-Grey Accent */
+  --subtle-highlight: #E1E7F0;
+  --ambient-glow: #8B9BB4;
+
+  /* Ambient Glows & Lighting */
+  --accent-glow: rgba(139, 155, 180, 0.35);
+  --accent-glow-subtle: rgba(139, 155, 180, 0.15);
+  --accent-glow-intense: rgba(225, 231, 240, 0.6);
+
+  /* Borders & Dividers */
+  --border-subtle: #343C49;
+  --border-medium: rgba(139, 155, 180, 0.35);
+  --border-bright: rgba(225, 231, 240, 0.5);
+  --border-cyan: rgba(139, 155, 180, 0.4);
+
+  /* Typography */
+  --text-primary: #FFFFFF;
+  --text-secondary: #BFC7D5;
+  --text-muted: #929CAB;
+  --text-neon: #FFFFFF;
+  --text-cyan: #E1E7F0;
+
+  /* Fonts */
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+  --font-heading: 'Outfit', sans-serif;
+
+  /* Shadows & Ambient Glows */
+  --glow-box: 0 0 25px rgba(139, 155, 180, 0.22);
+  --glow-box-lg: 0 0 45px rgba(139, 155, 180, 0.32);
+  --glow-text: 0 0 14px rgba(225, 231, 240, 0.45);
+  --glow-cyan: 0 0 20px rgba(139, 155, 180, 0.28);
+
+  /* Transitions & Springs */
+  --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --spring-snappy: cubic-bezier(0.2, 0.95, 0.3, 1.15);
+  --spring-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Surface & Border Gradients */
+  --border-gradient: linear-gradient(135deg, rgba(225, 231, 240, 0.5) 0%, rgba(52, 60, 73, 0.6) 50%, rgba(139, 155, 180, 0.35) 100%);
+  --bg-frosted: rgba(13, 17, 23, 0.85);
+  --bg-frosted-heavy: rgba(9, 11, 15, 0.95);
+
+  /* Stage & Helmet Mask Config */
+  --reveal-radius: 120px;
+  --reveal-x: 50%;
+  --reveal-y: 50%;
+
+  /* Spacing & Container */
+  --container-max: 1240px;
+  --header-height: 80px;
+}

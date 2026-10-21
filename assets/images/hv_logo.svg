@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" fill="none">
+  <defs>
+    <linearGradient id="vGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#8B9BB4" />
+    </linearGradient>
+    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- H Letter in Pristine White -->
+  <path d="M12 8 H22 V20 H34 V8 H44 V40 H34 V28 H22 V40 H12 Z" fill="#FFFFFF" />
+  <!-- V Letter in Radiant Neon Emerald with subtle glow -->
+  <path d="M52 8 H63.5 L75.5 32 L87.5 8 H99 L82 40 H69 Z" fill="url(#vGlow)" filter="url(#neonBlur)" />
+</svg>

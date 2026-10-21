@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="30" height="30" fill="none">
+  <path d="M9 25 C5 25 2.5 22 2.5 18 C2.5 14.5 5 11.8 8.5 11.5 C9.8 7.5 13.5 5 18 5 C23 5 27 8.2 27.8 13 C31 13.5 33.5 15.8 33.5 19 C33.5 22.3 30.8 25 27.5 25 Z" stroke="#8B9BB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(139, 155, 180, 0.08)"/>
+  <circle cx="18" cy="17" r="3.2" stroke="#E1E7F0" stroke-width="2"/>
+  <path d="M18 11.8v1.6 M18 20.6v1.6 M12.8 17h1.6 M21.6 17h1.6 M14.2 13.2l1.2 1.2 M20.6 19.6l1.2 1.2 M14.2 20.8l1.2-1.2 M20.6 14.4l1.2-1.2" stroke="#E1E7F0" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="12" y="14.8" width="12" height="4.4" rx="1.5" fill="#0D1117" stroke="#8B9BB4" stroke-width="0.8"/>
+  <text x="18" y="18.2" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="3.2" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">API</text>
+</svg>

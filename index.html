@@ -1,0 +1,2879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harivansh Vats | Data Analyst · AI Automation · Web Development</title>
+  <meta name="description"
+    content="Official personal portfolio of Harivansh Vats — Aspiring Data Analyst & B.Tech student at DCRUST Murthal with competencies in Power BI, SQL, Python, Excel, and AI Workflows.">
+  <meta name="keywords"
+    content="Harivansh Vats, Data Analyst, Power BI, SQL, Python, Excel, DCRUST Murthal, BharatCares, Portfolio">
+  <meta name="author" content="Harivansh Vats">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Harivansh Vats | Cybernetic Portfolio">
+  <meta property="og:description"
+    content="Explore real-world data analytics dashboards, AI chatbot workflows, and technical projects by Harivansh Vats.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts: Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/portrait.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/projects-showcase.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/certificates.css">
+  <link rel="stylesheet" href="css/command-palette.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Cyber Background Grid & Ambient Glow -->
+  <div class="cyber-bg-overlay" aria-hidden="true"></div>
+  <div class="cyber-noise-layer" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <div class="app-container">
+    <!-- ========================================================
+         TOP NAVIGATION HEADER
+         ======================================================== -->
+    <header class="site-header" id="siteHeader">
+      <div class="nav-container">
+        <!-- Extreme Left: HV Brand Logo & Open To Work Badge -->
+        <div class="brand-group">
+          <a href="#home" class="brand-logo" aria-label="Harivansh Vats Home">
+            <img src="assets/images/hv_logo_new.png" alt="HV Logo" width="60" height="42">
+          </a>
+
+          <!-- Live Availability Status Beacon (Highlighted) -->
+          <div class="header-status-badge highlighted" title="Status: Open to work in Data Analytics, BI, Generative AI, Agentic AI &amp; Web Development">
+            <span class="status-pulse-dot"></span>
+            <span class="status-badge-text">OPEN TO WORK</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item mobile-nav-resume" style="display: none;">
+              <a href="assets/resume/Harivansh_Vats_Resume.pdf" download="Harivansh_Vats_Resume.pdf" class="btn-resume">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions: Download Resume & Mobile Toggle -->
+        <div class="nav-actions">
+          <!-- Download Resume Button -->
+          <a href="assets/resume/Harivansh_Vats_Resume.pdf" download="Harivansh_Vats_Resume.pdf" class="btn-resume"
+            id="headerResumeBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Resume
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================================
+         HERO SECTION (Matching Reference Image 3)
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- LEFT SIDE: Text, Headings, Buttons, Socials -->
+          <div class="hero-content">
+            <!-- Small Heading (Floating & Interactive) -->
+            <div class="hero-greeting interactive-floating-text" title="Tap to interact">
+              <div class="greeting-bar"></div>
+              <span class="greeting-text">HELLO, I'M</span>
+            </div>
+
+            <!-- Main Heading with Interactive Particle Typography -->
+            <div class="hero-title-container" id="heroTitleContainer" title="Hover or tap to disperse particles">
+              <h1 class="hero-title interactive-floating-text" id="heroTitleHeading">
+                <span class="hero-name-first">Harivansh</span> <span class="vats-highlight">Vats</span>
+              </h1>
+              <canvas id="particleTitleCanvas" class="particle-title-canvas" aria-hidden="true"></canvas>
+            </div>
+
+            <!-- Professional Tagline (Floating & Interactive) -->
+            <div class="hero-tagline interactive-floating-text" title="Tap to interact">
+              <span>Data Analytics</span>
+              <span class="tagline-dot"></span>
+              <span>Web Development</span>
+              <span class="tagline-dot"></span>
+              <span>AI Automation</span>
+              <span class="tagline-dot"></span>
+              <span>Generative AI</span>
+            </div>
+
+            <!-- Description (Floating & Interactive) -->
+            <p class="hero-description interactive-floating-text" title="Tap to interact">
+              I build digital solutions that solve real-world problems.
+            </p>
+
+            <!-- Buttons: View My Work, Get In Touch, View Resume -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary" id="btnViewWork">
+                View My Work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <button type="button" class="btn-secondary btn-view-resume" id="btnHeroResume"
+                style="border-color: var(--neon-emerald); color: var(--neon-emerald);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" style="width: 16px; height: 16px;">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                View Resume
+              </button>
+
+              <a href="#contact" class="btn-secondary" id="btnGetInTouch">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Get In Touch
+              </a>
+            </div>
+
+            <!-- Clickable Logo Cards -->
+            <div class="hero-socials hero-logo-cards">
+              <!-- LinkedIn Logo Card -->
+              <a href="https://www.linkedin.com/in/harivansh-vats-b00a722a4" target="_blank" rel="noopener noreferrer"
+                class="social-logo-card social-linkedin" data-tooltip="LinkedIn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+              </a>
+
+              <!-- GitHub Logo Card -->
+              <a href="https://github.com/Harivansh31" target="_blank" rel="noopener noreferrer"
+                class="social-logo-card social-github" data-tooltip="GitHub" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </a>
+
+              <!-- Email Logo Card -->
+              <a href="mailto:harivanshvats@gmail.com" class="social-logo-card social-email" data-tooltip="Email"
+                aria-label="Send Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+
+              <!-- Phone Logo Card -->
+              <a href="tel:+917011863224" class="social-logo-card social-phone" data-tooltip="Call"
+                aria-label="Call Harivansh">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Recruiter AI Query Assistant Section (Below GitHub & LinkedIn) -->
+            <div class="recruiter-search-container" id="recruiterSearchContainer">
+              <div class="search-input-wrapper">
+                <div class="search-icon-pulse">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <input type="text" id="recruiterInput" class="recruiter-input"
+                  placeholder="Ask anything about me..." autocomplete="off" />
+                <button type="button" class="btn-ask-submit" id="btnAskSubmit" aria-label="Ask Harivansh AI Assistant">
+                  <span>ASK</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Quick Prompt Chips for Recruiters -->
+              <div class="search-quick-chips">
+                <button type="button" class="chip-btn" data-query="Can I view your official resume?">📄 Resume</button>
+                <button type="button" class="chip-btn" data-query="What are your AI & automation skills?">⚡ AI
+                  Skills</button>
+                <button type="button" class="chip-btn" data-query="What is your work experience?">💼 Experience</button>
+                <button type="button" class="chip-btn" data-query="Tell me about your key projects.">🚀 Top
+                  Projects</button>
+                <button type="button" class="chip-btn" data-query="Are you available for hire?">🎯 Availability</button>
+              </div>
+
+              <!-- Expandable Cyber Answer Terminal -->
+              <div class="recruiter-response-card" id="recruiterResponseCard">
+                <button type="button" class="response-close-btn" id="responseCloseBtn"
+                  aria-label="Close response">✕</button>
+                <div class="response-body" id="recruiterResponseBody"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: Prominent Interactive Portrait with Futuristic Helmet Rider Reveal -->
+          <div class="hero-portrait-wrapper">
+            <div class="portrait-backlight" aria-hidden="true"></div>
+
+            <!-- Rotating Cyber HUD Radar Ring behind the head -->
+            <div class="cyber-hud-orbit" aria-hidden="true">
+              <div class="hud-ring-outer">
+                <span class="hud-node node-1"></span>
+                <span class="hud-node node-2"></span>
+              </div>
+              <div class="hud-ring-inner">
+                <span class="hud-node node-3"></span>
+                <span class="hud-node node-4"></span>
+              </div>
+            </div>
+
+
+            <!-- Portrait Container (Strict Reveal Boundary - Seamless Blend) -->
+            <div class="portrait-container" id="portraitContainer"
+              aria-label="Interactive Cybernetic Portrait of Harivansh Vats">
+              <!-- Base Layer: Harivansh's Original Portrait -->
+              <img src="assets/images/portrait_human_final.png" alt="Harivansh Vats Portrait"
+                class="portrait-layer portrait-base" id="humanBaseLayer" />
+
+              <!-- Overlay Layer: Futuristic Cyber Helmet Rider (Full Suit: Helmet + Jacket + Gloves) -->
+              <div class="portrait-rider-reveal" id="riderLayerReveal">
+                <img src="assets/images/portrait_rider_final.png" alt="Futuristic Cyber Helmet Rider"
+                  class="portrait-layer portrait-rider" />
+              </div>
+
+              <!-- Interactive Holographic Cyber Laser Scanline -->
+              <div class="portrait-scan-line" id="portraitScanLine" aria-hidden="true"></div>
+            </div>
+
+            <!-- Mobile Holographic Scanner Toggle Button -->
+            <button type="button" class="mobile-holo-toggle" id="mobileHoloToggle">
+              <span>⚡</span> SCAN CYBER HELMET
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Center: Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator-container" aria-label="Scroll down to About section">
+        <div class="scroll-mouse-icon">
+          <div class="scroll-wheel-dot"></div>
+        </div>
+        <span class="scroll-text">Scroll Down</span>
+        <svg class="scroll-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         01. ABOUT ME SECTION
+         ======================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Header & Bio -->
+          <div class="about-left-col">
+            <!-- HUD Category Tag -->
+            <div class="about-tag">
+              <span class="about-tag-square" aria-hidden="true"></span>
+              <span class="about-tag-text">01 // ABOUT ME</span>
+            </div>
+
+            <!-- Big Two-Line Headline -->
+            <h2 class="about-main-title">
+              <span class="title-white">Engineering Mindset.</span>
+              <span class="title-neon">Data-Driven Thinking.</span>
+            </h2>
+
+            <!-- Role Subtitle -->
+            <p class="about-subtitle">
+              Bridging engineering principles with data, AI, and intelligent digital solutions.
+            </p>
+
+            <!-- Exact Bio Text from Reference -->
+            <div class="about-bio-text">
+              <p>
+                I'm <strong>Harivansh Vats</strong>, a Mechanical Engineering student at DCRUST Murthal, passionate
+                about turning complex problems into practical digital solutions.
+              </p>
+              <p>
+                My journey combines analytical thinking, data-driven decision-making, and exploring how AI can make
+                everyday workflows smarter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vertical Futuristic Accent Divider with Top Bracket -->
+          <div class="about-grid-divider" aria-hidden="true"></div>
+
+          <!-- Right Column: 3 Feature Cards -->
+          <div class="about-cards-column">
+            <!-- Card 01: Education -->
+            <div class="about-feature-card">
+              <div class="about-card-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="about-icon-svg">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="about-card-body">
+                <span class="about-card-num">01</span>
+                <h3 class="about-card-title">Education</h3>
+                <p class="about-card-primary">B.Tech Mechanical Engineering</p>
+                <p class="about-card-secondary">DCRUST Murthal · 2023 - 2027</p>
+              </div>
+            </div>
+
+            <!-- Card 02: Focus Areas -->
+            <div class="about-feature-card">
+              <div class="about-card-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="about-icon-svg">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <line x1="12" y1="2" x2="12" y2="4"></line>
+                  <line x1="12" y1="20" x2="12" y2="22"></line>
+                  <line x1="2" y1="12" x2="4" y2="12"></line>
+                  <line x1="20" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <div class="about-card-body">
+                <span class="about-card-num">02</span>
+                <h3 class="about-card-title">Focus Areas</h3>
+                <p class="about-card-primary">Data Analytics · AI Automation</p>
+                <p class="about-card-secondary">Business Intelligence · Problem Solving</p>
+              </div>
+            </div>
+
+            <!-- Card 03: Beyond Data -->
+            <div class="about-feature-card">
+              <div class="about-card-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="about-icon-svg">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="about-card-body">
+                <span class="about-card-num">03</span>
+                <h3 class="about-card-title">Beyond Data</h3>
+                <p class="about-card-primary">Web Development · Intelligent Systems</p>
+                <p class="about-card-secondary">Exploring Real-World Applications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Futuristic Bottom Tagline Bar -->
+        <div class="about-bottom-tagline" aria-hidden="true">
+          <div class="tagline-rule"></div>
+          <div class="tagline-badge">
+            <span class="tagline-square"></span>
+            <span class="tagline-text">CURIOUS BY NATURE. DRIVEN BY PROBLEM-SOLVING.</span>
+          </div>
+          <div class="tagline-rule"></div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ========================================================
+         SKILLS & AUTOMATION MASTER TRACK
+         Shared Left Cyber Rail & Floating 3D Holographic Glass Bubble
+         (Seamless transition from Data Analytics to AI & Automation)
+         ======================================================== -->
+    <div class="skills-master-track" id="skillsMasterTrack">
+      <div class="skills-showcase-container">
+        <!-- Left Vertical Cyber Rail / Dock (Matching Reference Image) -->
+        <aside class="skills-dock-rail" aria-label="Portfolio Category Navigation">
+          <div class="dock-line" aria-hidden="true"></div>
+
+          <a href="#home" class="dock-node" data-category="0" aria-label="Home / Overview">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Active Node 1: Data Analytics (Active when viewing #skills) -->
+          <a href="#skills" class="dock-node active" id="dockNodeAnalytics" data-category="1" aria-label="Data Analytics (Active)">
+            <div class="dock-icon-ring animated-analytics-dock-ring">
+              <svg class="analytics-dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line class="dock-bar dock-bar-1" x1="6" y1="20" x2="6" y2="14"></line>
+                <line class="dock-bar dock-bar-2" x1="12" y1="20" x2="12" y2="7"></line>
+                <line class="dock-bar dock-bar-3" x1="18" y1="20" x2="18" y2="11"></line>
+              </svg>
+            </div>
+            <div class="dock-label">
+              <span class="dock-label-data">Data</span>
+              <span class="dock-label-sub">Analytics</span>
+            </div>
+          </a>
+
+          <!-- Node 2: AI & Automation (Active when viewing #ai-automation) -->
+          <a href="#ai-automation" class="dock-node" id="dockNodeAi" data-category="2" aria-label="AI &amp; Automation">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 3.37 2.1 6.25 5.08 7.37.45.17.92.26 1.42.26h3c.5 0 .97-.09 1.42-.26A8.003 8.003 0 0 0 12 2z"></path>
+                <path d="M9 18v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"></path>
+                <line x1="10" y1="12" x2="10.01" y2="12"></line>
+                <line x1="14" y1="12" x2="14.01" y2="12"></line>
+              </svg>
+            </div>
+            <div class="dock-label dock-label-ai" style="display: none;">
+              <span class="dock-label-data">AI &amp;</span>
+              <span class="dock-label-sub">Automation</span>
+            </div>
+          </a>
+
+          <!-- Node 3: Development & Tools (Active when viewing #web-development) -->
+          <a href="#web-development" class="dock-node" id="dockNodeDev" data-category="3" aria-label="Development &amp; Tools">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="dock-label dock-label-dev" style="display: none;">
+              <span class="dock-label-data">Dev &amp;</span>
+              <span class="dock-label-sub">Tools</span>
+            </div>
+          </a>
+
+          <!-- Node 4: Engineering and IoT (Active when viewing #engineering-iot) -->
+          <a href="#engineering-iot" class="dock-node" id="dockNodeEng" data-category="4" aria-label="Engineering and IoT">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="dock-label dock-label-eng" style="display: none;">
+              <span class="dock-label-data">Eng &amp;</span>
+              <span class="dock-label-sub">IoT</span>
+            </div>
+          </a>
+
+          <!-- Node 5: Featured Projects -->
+          <a href="#projects" class="dock-node" id="dockNodeProjects" data-category="5" aria-label="Featured Projects">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#certificates" class="dock-node" id="dockNodeCertificates" data-category="6" aria-label="Academic &amp; Certifications">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+          </a>
+
+          <a href="#contact" class="dock-node" id="dockNodeContact" data-category="7" aria-label="Profile / Contact">
+            <div class="dock-icon-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </a>
+        </aside>
+
+        <!-- Center 3D Animated Holographic Centerpiece (ONE SHARED GLASS BUBBLE) -->
+        <div class="skills-orb-column">
+          <div class="skills-orb-wrapper" id="analyticsOrbContainer">
+            <div class="analytics-3d-scene">
+              <canvas id="analyticsOrbCanvas"></canvas>
+
+
+
+              <!-- Ambient Micro-Embers / Bubbles -->
+              <div class="ambient-micro-bubble bubble-top-mid" aria-hidden="true"></div>
+              <div class="ambient-micro-bubble bubble-mid-right" aria-hidden="true"></div>
+              <div class="ambient-micro-bubble bubble-bot-center" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content Column: Sequential Flow of Sections -->
+        <div class="skills-content-column-track">
+          <!-- ========================================================
+               SECTION 1: DATA ANALYTICS (#skills)
+               ======================================================== -->
+          <section class="section skills-section" id="skills">
+            <div class="skills-showcase-topbar">
+              <div class="skills-pill-badge">
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span class="badge-text">SKILLS</span>
+              </div>
+
+              <div class="skills-pagination">
+                <span class="skills-page-counter" aria-label="Category 2 of 5">
+                  <span class="curr-page" id="skillsCurrentIndex">02</span>
+                  <span class="slash">/</span>
+                  <span class="total-page">05</span>
+                </span>
+                <div class="skills-arrows">
+                  <button class="skills-nav-arrow-btn" id="skillsPrevBtn" aria-label="Previous skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button class="skills-nav-arrow-btn" id="skillsNextBtn" aria-label="Next skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Heading with Interactive Particle Typography: Data Analytics -->
+            <div class="particle-heading-container" id="skillsHeadingContainer" title="Hover or tap to disperse particles">
+              <h2 class="skills-showcase-heading" id="skillsHeading">
+                Data <span class="heading-neon">Analytics</span>
+              </h2>
+              <canvas id="skillsParticleCanvas" class="particle-heading-canvas" aria-hidden="true"></canvas>
+            </div>
+
+            <!-- Subtitle -->
+            <p class="skills-showcase-description" id="skillsDescription">
+              Turning raw data into meaningful insights. I work with modern tools and technologies to analyze, visualize and
+              solve real world problems using data.
+            </p>
+
+            <!-- 9 Interactive Skill Cards (3x3 Grid) Matching Reference Image -->
+            <div class="skills-tools-grid" id="skillsToolsGrid">
+              <!-- Card 1: Python -->
+              <div class="skill-tool-card" data-tool="python">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 128 128" width="32" height="32" aria-hidden="true">
+                    <linearGradient id="card-py-b" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#387eb8" />
+                      <stop offset="100%" stop-color="#366994" />
+                    </linearGradient>
+                    <linearGradient id="card-py-y" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffe873" />
+                      <stop offset="100%" stop-color="#ffd43b" />
+                    </linearGradient>
+                    <path fill="url(#card-py-b)"
+                      d="M63.6 5.8c-28.7 0-26.9 12.4-26.9 12.4l.1 12.8h27.4v3.9H25.8S9 33 9 61.9c0 28.8 14.8 27.8 14.8 27.8h8.8v-12.3s-.5-14.8 14.5-14.8h25.1s13.8.2 13.8-13.3V20s2-14.2-22.4-14.2zm-14.5 8.7c2.9 0 5.2 2.3 5.2 5.2s-2.3 5.2-5.2 5.2-5.2-2.3-5.2-5.2 2.3-5.2 5.2-5.2z" />
+                    <path fill="url(#card-py-y)"
+                      d="M64.4 122.2c28.7 0 26.9-12.4 26.9-12.4l-.1-12.8H63.8v-3.9h38.4s16.8 1.9 16.8-27c0-28.8-14.8-27.8-14.8-27.8h-8.8v12.3s.5 14.8-14.5 14.8H45.8s-13.8-.2-13.8 13.3v29.3s-2 14.2 22.4 14.2zm14.5-8.7c-2.9 0-5.2-2.3-5.2-5.2s2.3-5.2 5.2-5.2 5.2 2.3 5.2 5.2-2.3 5.2-5.2 5.2z" />
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Python</h3>
+                  <p class="tool-card-subtitle">Data Analysis, Scripting</p>
+                </div>
+              </div>
+
+                    <!-- Card 2: SQL -->
+              <div class="skill-tool-card" data-tool="sql">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 36 36" width="30" height="30" fill="none" aria-hidden="true">
+                    <ellipse cx="18" cy="8" rx="12" ry="4.5" fill="rgba(225,231,240,0.12)" stroke="#E1E7F0" stroke-width="2" />
+                    <path d="M6 8v7c0 2.5 5.4 4.5 12 4.5s12-2 12-4.5V8" stroke="#E1E7F0" stroke-width="2" />
+                    <path d="M6 15v7c0 2.5 5.4 4.5 12 4.5s12-2 12-4.5v-7" stroke="#E1E7F0" stroke-width="2" />
+                    <rect x="9.5" y="16.5" width="17" height="11" rx="3" fill="#0D1117" stroke="#E1E7F0" stroke-width="1.6" />
+                    <text x="18" y="24.8" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="7.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">SQL</text>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">SQL</h3>
+                  <p class="tool-card-subtitle">Querying, Data Modelling</p>
+                </div>
+              </div>
+
+              <!-- Card 3: Microsoft Excel -->
+              <div class="skill-tool-card" data-tool="excel">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="#107C41" aria-hidden="true">
+                    <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3Z"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Microsoft Excel</h3>
+                  <p class="tool-card-subtitle">Data Cleaning, Analysis</p>
+                </div>
+              </div>
+
+              <!-- Card 4: Power BI -->
+              <div class="skill-tool-card" data-tool="powerbi">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="#F2C811" aria-hidden="true">
+                    <path d="M10 12a1 1 0 0 1 1 1v11H4a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h6Zm-2-.5V7a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v17h-4.5V13a1.5 1.5 0 0 0-1.5-1.5H8Zm5-6V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v22a1 1 0 0 1-1 1h-3.5V7A1.5 1.5 0 0 0 15 5.5h-2Z"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Power BI</h3>
+                  <p class="tool-card-subtitle">Data Visualization</p>
+                </div>
+              </div>
+
+              <!-- Card 5: Pandas -->
+              <div class="skill-tool-card" data-tool="pandas">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true">
+                    <path fill="#E2E8F0" d="M46.236 7.567h13.99v29.047h-13.99Zm0 59.668h13.99V96.28h-13.99Z"/>
+                    <path fill="#FFCA00" d="M46.236 45.092h13.99v13.705h-13.99Z"/>
+                    <path fill="#FFFFFF" d="M23.763 31.446h13.989V128h-13.99ZM68.245 91.2h13.99v29.046h-13.99Zm0-59.72h13.99v29.047h-13.99Z"/>
+                    <path fill="#E70488" d="M68.245 69.011h13.99v13.705h-13.99Z"/>
+                    <path fill="#E2E8F0" d="M90.248 0h13.99v96.554h-13.99Z"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Pandas</h3>
+                  <p class="tool-card-subtitle">Data Manipulation</p>
+                </div>
+              </div>
+
+              <!-- Card 6: NumPy -->
+              <div class="skill-tool-card" data-tool="numpy">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true">
+                    <path fill="#4DABCF" d="m55.012 26.006-21.38-10.789L10.154 26.93l21.969 11.027Zm9.808 4.951L87.241 42.28 63.982 53.955l-22-11.043Zm29.948-15.581 23.037 11.552L97.2 37.272 74.735 25.938ZM84.853 10.4 64.113 0 43.598 10.24 64.97 21.014ZM68.64 99.702V128l25.122-12.537-.023-28.31ZM93.727 77.27l-.028-28.012-25.06 12.458V89.74Zm30.158-5.246v28.41l-21.43 10.69-.017-28.279zm0-9.935V34.25l-21.47 10.673.016 28.068z"/>
+                    <path fill="#4C75CF" d="m59.77 61.716-16.918-8.512V89.97s-20.7-44.033-22.612-47.99c-.246-.513-1.263-1.07-1.522-1.209-3.731-1.947-14.603-7.45-14.603-7.45v64.977l15.04 8.063V72.382s20.478 39.346 20.689 39.78c.214.429 2.257 4.57 4.459 6.028 2.92 1.939 15.458 9.477 15.458 9.477z" />
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">NumPy</h3>
+                  <p class="tool-card-subtitle">Numerical Computing</p>
+                </div>
+              </div>
+
+              <!-- Card 7: Tableau -->
+              <div class="skill-tool-card" data-tool="tableau">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="#E97627" aria-hidden="true" style="filter: drop-shadow(0 2px 8px rgba(233,118,39,0.35));">
+                    <path d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Tableau</h3>
+                  <p class="tool-card-subtitle">Data Visualization</p>
+                </div>
+              </div>
+
+              <!-- Card 8: Seaborn -->
+              <div class="skill-tool-card" data-tool="seaborn">
+                <div class="tool-icon-box">
+                  <img src="assets/icons/seaborn.svg" alt="Seaborn" width="30" height="30" loading="lazy" style="object-fit: contain; border-radius: 50%; filter: drop-shadow(0 2px 8px rgba(92,125,162,0.4));" />
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Seaborn</h3>
+                  <p class="tool-card-subtitle">Statistical Analysis</p>
+                </div>
+              </div>
+
+              <!-- Card 9: Jupyter -->
+              <div class="skill-tool-card" data-tool="jupyter">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true">
+                    <path d="M109.766 7.281a7.691 7.691 0 01-1.09 4.282 7.583 7.583 0 01-3.262 2.949 7.49 7.49 0 01-4.34.62 7.525 7.525 0 01-3.953-1.913A7.642 7.642 0 0195.137 5a7.606 7.606 0 012.629-3.531 7.509 7.509 0 014.136-1.461 7.51 7.51 0 015.422 1.996 7.627 7.627 0 012.438 5.273z" fill="#767677"/>
+                    <path d="M65.758 96.79c-20.098 0-37.649-7.364-46.766-18.267a49.95 49.95 0 0018.102 24.254 49.251 49.251 0 0028.676 9.215 49.279 49.279 0 0028.675-9.215 49.917 49.917 0 0018.094-24.254C103.406 89.426 85.855 96.79 65.758 96.79zm0 0M65.75 25.883c20.098 0 37.652 7.367 46.766 18.265a49.95 49.95 0 00-18.102-24.253 49.27 49.27 0 00-28.672-9.22 49.27 49.27 0 00-28.672 9.22A49.909 49.909 0 0018.97 44.148C28.102 33.27 45.652 25.883 65.75 25.883z" fill="#F37626"/>
+                    <path d="M38.164 117.984a9.671 9.671 0 01-1.371 5.399 9.5 9.5 0 01-9.59 4.504 9.405 9.405 0 01-4.98-2.418 9.671 9.671 0 01-2.809-4.797 9.73 9.73 0 01.313-5.567 9.624 9.624 0 013.328-4.453 9.466 9.466 0 0112.043.688 9.63 9.63 0 013.066 6.648z" fill="#989798"/>
+                    <path d="M21.285 23.418a5.53 5.53 0 01-3.14-.816 5.627 5.627 0 01-2.618-5.672 5.612 5.612 0 011.407-2.95 5.593 5.593 0 012.789-1.664 5.46 5.46 0 013.238.184 5.539 5.539 0 012.586 1.969 5.66 5.66 0 01-.399 7.129 5.557 5.557 0 01-3.867 1.82z" fill="#6F7070"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Jupyter</h3>
+                  <p class="tool-card-subtitle">Interactive Analysis</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- View My Projects Pill Button (Matching Reference Image) -->
+            <div class="skills-action-row">
+              <a href="#projects" class="skills-view-projects-btn">
+                <span>View My Projects</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <!-- ========================================================
+               SECTION 2: AI & AUTOMATION (#ai-automation)
+               (Pixel-Perfect Match to Attached Reference Image)
+               ======================================================== -->
+          <section class="section ai-automation-section" id="ai-automation">
+            <div class="skills-showcase-topbar">
+              <div class="skills-webdev-badge">
+                <span>AI &amp; AUTOMATION</span>
+              </div>
+
+              <div class="skills-pagination">
+                <span class="skills-page-counter" aria-label="Category 3 of 5">
+                  <span class="curr-page">03</span>
+                  <span class="slash">/</span>
+                  <span class="total-page">05</span>
+                </span>
+                <div class="skills-arrows">
+                  <button class="skills-nav-arrow-btn" id="aiPrevBtn" aria-label="Previous skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button class="skills-nav-arrow-btn" id="aiNextBtn" aria-label="Next skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Heading with Interactive Particle Typography: AI & Automation -->
+            <div class="particle-heading-container" id="aiHeadingContainer" title="Hover or tap to disperse particles">
+              <h2 class="skills-showcase-heading" id="aiHeading">
+                AI &amp; <span class="heading-neon">Automation</span>
+              </h2>
+              <canvas id="aiParticleCanvas" class="particle-heading-canvas" aria-hidden="true"></canvas>
+            </div>
+
+            <!-- Subtitle -->
+            <p class="skills-showcase-description" id="aiDescription">
+              Exploring the power of Artificial Intelligence to build smarter solutions and automate real-world tasks. From generative AI to intelligent automation, I work with modern tools and APIs to create innovative and efficient workflows.
+            </p>
+
+            <!-- 10 Interactive Skill Cards (2 Columns x 5 Rows) -->
+            <div class="skills-ai-grid" id="aiToolsGrid">
+              <!-- 1. ChatGPT (Real Official Logo) -->
+              <div class="skill-tool-card" data-tool="chatgpt">
+                <div class="tool-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2406 2406" width="30" height="30" aria-hidden="true" style="filter: drop-shadow(0 2px 8px rgba(116,170,156,0.4));">
+                    <path d="M1 578.4C1 259.5 259.5 1 578.4 1h1249.1c319 0 577.5 258.5 577.5 577.4V2406H578.4C259.5 2406 1 2147.5 1 1828.6V578.4z" fill="#74aa9c"/>
+                    <path id="chatgpt-petal" d="M1107.3 299.1c-197.999 0-373.9 127.3-435.2 315.3L650 743.5v427.9c0 21.4 11 40.4 29.4 51.4l344.5 198.515V833.3h.1v-27.9L1372.7 604c33.715-19.52 70.44-32.857 108.47-39.828L1447.6 450.3C1361 353.5 1237.1 298.5 1107.3 299.1zm0 117.5-.6.6c79.699 0 156.3 27.5 217.6 78.4-2.5 1.2-7.4 4.3-11 6.1L952.8 709.3c-18.4 10.4-29.4 30-29.4 51.4V1248l-155.1-89.4V755.8c-.1-187.099 151.601-338.9 339-339.2z" fill="#fff"/>
+                    <use xlink:href="#chatgpt-petal" transform="rotate(60 1203 1203)"/>
+                    <use xlink:href="#chatgpt-petal" transform="rotate(120 1203 1203)"/>
+                    <use xlink:href="#chatgpt-petal" transform="rotate(180 1203 1203)"/>
+                    <use xlink:href="#chatgpt-petal" transform="rotate(240 1203 1203)"/>
+                    <use xlink:href="#chatgpt-petal" transform="rotate(300 1203 1203)"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">ChatGPT</h3>
+                  <p class="tool-card-subtitle">AI Assistant</p>
+                </div>
+              </div>
+
+              <!-- 2. Claude -->
+              <div class="skill-tool-card" data-tool="claude">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 256 257" width="30" height="30" aria-hidden="true">
+                    <path fill="#D97757" d="m50.228 170.321 50.357-28.257.843-2.463-.843-1.361h-2.462l-8.426-.518-28.775-.778-24.952-1.037-24.175-1.296-6.092-1.297L0 125.796l.583-3.759 5.12-3.434 7.324.648 16.202 1.101 24.304 1.685 17.629 1.037 26.118 2.722h4.148l.583-1.685-1.426-1.037-1.101-1.037-25.147-17.045-27.22-18.017-14.258-10.37-7.713-5.25-3.888-4.925-1.685-10.758 7-7.713 9.397.649 2.398.648 9.527 7.323 20.35 15.75L94.817 91.9l3.889 3.24 1.555-1.102.195-.777-1.75-2.917-14.453-26.118-15.425-26.572-6.87-11.018-1.814-6.61c-.648-2.723-1.102-4.991-1.102-7.778l7.972-10.823L71.42 0 82.05 1.426l4.472 3.888 6.61 15.101 10.694 23.786 16.591 32.34 4.861 9.592 2.592 8.879.973 2.722h1.685v-1.556l1.36-18.211 2.528-22.36 2.463-28.776.843-8.1 4.018-9.722 7.971-5.25 6.222 2.981 5.12 7.324-.713 4.73-3.046 19.768-5.962 30.98-3.889 20.739h2.268l2.593-2.593 10.499-13.934 17.628-22.036 7.778-8.749 9.073-9.657 5.833-4.601h11.018l8.1 12.055-3.628 12.443-11.342 14.388-9.398 12.184-13.48 18.147-8.426 14.518.778 1.166 2.01-.194 30.46-6.481 16.462-2.982 19.637-3.37 8.88 4.148.971 4.213-3.5 8.62-20.998 5.184-24.628 4.926-36.682 8.685-.454.324.519.648 16.526 1.555 7.065.389h17.304l32.21 2.398 8.426 5.574 5.055 6.805-.843 5.184-12.962 6.611-17.498-4.148-40.83-9.721-14-3.5h-1.944v1.167l11.666 11.406 21.387 19.314 26.767 24.887 1.36 6.157-3.434 4.86-3.63-.518-23.526-17.693-9.073-7.972-20.545-17.304h-1.36v1.814l4.73 6.935 25.017 37.59 1.296 11.536-1.814 3.76-6.481 2.268-7.13-1.297-14.647-20.544-15.1-23.138-12.185-20.739-1.49.843-7.194 77.448-3.37Z"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Claude</h3>
+                  <p class="tool-card-subtitle">AI Assistant</p>
+                </div>
+              </div>
+
+              <!-- 3. Google Gemini -->
+              <div class="skill-tool-card" data-tool="gemini">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="card-gemini-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4E95ED" />
+                        <stop offset="35%" stop-color="#7B68EE" />
+                        <stop offset="70%" stop-color="#C084FC" />
+                        <stop offset="100%" stop-color="#F472B6" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81" fill="url(#card-gemini-grad)"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Google Gemini</h3>
+                  <p class="tool-card-subtitle">AI Assistant</p>
+                </div>
+              </div>
+
+              <!-- 4. Antigravity (Official Logo) -->
+              <div class="skill-tool-card" data-tool="antigravity">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 180 180" width="30" height="30" fill="none" aria-hidden="true" style="filter: drop-shadow(0 2px 10px rgba(56,189,248,0.45));">
+                    <defs>
+                      <linearGradient id="antigravity-brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38BDF8" />
+                        <stop offset="100%" stop-color="#2563EB" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M144.248 149.062c7.5 5.626 18.75 1.876 8.437-8.437-30.937-30-24.375-112.5-62.812-112.5-38.438 0-31.875 82.5-62.813 112.5-11.25 11.25.938 14.063 8.438 8.437 29.062-19.687 27.187-54.375 54.375-54.375 27.187 0 25.312 34.688 54.375 54.375Z" fill="url(#antigravity-brand-grad)"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Antigravity</h3>
+                  <p class="tool-card-subtitle">AI Coding Tool</p>
+                </div>
+              </div>
+
+              <!-- 5. Cursor -->
+              <div class="skill-tool-card" data-tool="cursor">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" style="color: #FFFFFF;">
+                    <path d="M11.503.131 1.891 5.678a.84.84 0 0 0-.42.726v11.188c0 .3.162.575.42.724l9.609 5.55a1 1 0 0 0 .998 0l9.61-5.55a.84.84 0 0 0 .42-.724V6.404a.84.84 0 0 0-.42-.726L12.497.131a1.01 1.01 0 0 0-.996 0M2.657 6.338h18.55c.263 0 .43.287.297.515L12.23 22.918c-.062.107-.229.064-.229-.06V12.335a.59.59 0 0 0-.295-.51l-9.11-5.257c-.109-.063-.064-.23.061-.23"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Cursor</h3>
+                  <p class="tool-card-subtitle">AI IDE</p>
+                </div>
+              </div>
+
+              <!-- 6. OpenAI API -->
+              <div class="skill-tool-card" data-tool="openai-api">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" aria-hidden="true">
+                    <path d="M22.28 9.87a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.51-2.9 6.07 6.07 0 0 0-4.7-2.15 6.04 6.04 0 0 0-5.75 4.19 6.04 6.04 0 0 0-4.14 3 6.06 6.06 0 0 0 .74 6.81 5.98 5.98 0 0 0 .52 4.91 6.05 6.05 0 0 0 6.51 2.9 6.07 6.07 0 0 0 4.7 2.15 6.04 6.04 0 0 0 5.75-4.19 6.04 6.04 0 0 0 4.14-3 6.06 6.06 0 0 0-.74-6.81zm-9.02 12.1a4.58 4.58 0 0 1-2.9-.84l.15-.09 4.8-2.77a.8.8 0 0 0 .4-.69v-6.76l2.03 1.17v5.57a4.6 4.6 0 0 1-4.48 4.41zm-8.24-4.52a4.55 4.55 0 0 1-.54-2.98l.15.09 4.8 2.77a.8.8 0 0 0 .8 0l5.86-3.38v2.34l-4.83 2.79a4.6 4.6 0 0 1-6.24-1.63zm-1.22-9.35a4.56 4.56 0 0 1 2.36-2.14v5.71a.8.8 0 0 0 .4.69l5.86 3.38-2.03 1.17-4.83-2.79a4.6 4.6 0 0 1-1.76-6.02zm15.14 3.73l-5.86-3.38 2.03-1.17 4.83 2.79a4.6 4.6 0 0 1 1.76 6.02 4.56 4.56 0 0 1-2.36 2.14v-5.71a.8.8 0 0 0-.4-.69zm3.5 4.83a4.55 4.55 0 0 1 .54 2.98l-.15-.09-4.8-2.77a.8.8 0 0 0-.8 0l-5.86 3.38v-2.34l4.83-2.79a4.6 4.6 0 0 1 6.24 1.63zM8.31 9.44l4.83-2.79a4.6 4.6 0 0 1 6.24 1.63 4.55 4.55 0 0 1 .54 2.98l-.15-.09-4.8-2.77a.8.8 0 0 0-.8 0L8.31 11.78V9.44zm1.94 4.07l2.88-1.66 2.88 1.66v3.32l-2.88 1.66-2.88-1.66v-3.32z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">OpenAI API</h3>
+                  <p class="tool-card-subtitle">API Integration</p>
+                </div>
+              </div>
+
+              <!-- 7. n8n -->
+              <div class="skill-tool-card" data-tool="n8n">
+                <div class="tool-icon-box">
+                  <svg fill="#EA4B71" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" style="filter: drop-shadow(0 2px 8px rgba(234,75,113,0.35));">
+                    <path d="M21.4737 5.6842c-1.1772 0-2.1663.8051-2.4468 1.8947h-2.8955c-1.235 0-2.289.893-2.492 2.111l-.1038.623a1.263 1.263 0 0 1-1.246 1.0555H11.289c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947s-2.1663.8051-2.4467 1.8947H4.973c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947C1.1311 9.4737 0 10.6047 0 12s1.131 2.5263 2.5263 2.5263c1.1772 0 2.1663-.8051 2.4468-1.8947h1.4223c.2804 1.0896 1.2696 1.8947 2.4467 1.8947 1.1772 0 2.1663-.8051 2.4468-1.8947h1.0008a1.263 1.263 0 0 1 1.2459 1.0555l.1038.623c.203 1.218 1.257 2.111 2.492 2.111h.3692c.2804 1.0895 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263c-1.1772 0-2.1664.805-2.4468 1.8947h-.3692a1.263 1.263 0 0 1-1.246-1.0555l-.1037-.623A2.52 2.52 0 0 0 13.9607 12a2.52 2.52 0 0 0 .821-1.4794l.1038-.623a1.263 1.263 0 0 1 1.2459-1.0555h2.8955c.2805 1.0896 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263m0 1.2632a1.263 1.263 0 0 1 1.2631 1.2631 1.263 1.263 0 0 1-1.2631 1.2632 1.263 1.263 0 0 1-1.2632-1.2632 1.263 1.263 0 0 1 1.2632-1.2631M2.5263 10.7368A1.263 1.263 0 0 1 3.7895 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 1.2632 12a1.263 1.263 0 0 1 1.2631-1.2632m6.3158 0A1.263 1.263 0 0 1 10.1053 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 7.579 12a1.263 1.263 0 0 1 1.2632-1.2632m10.1053 3.7895a1.263 1.263 0 0 1 1.2631 1.2632 1.263 1.263 0 0 1-1.2631 1.2631 1.263 1.263 0 0 1-1.2632-1.2631 1.263 1.263 0 0 1 1.2632-1.2632"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">n8n</h3>
+                  <p class="tool-card-subtitle">Workflow Automation</p>
+                </div>
+              </div>
+
+              <!-- 8. Prompt Engineering -->
+              <div class="skill-tool-card" data-tool="prompt-engineering">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true">
+                    <rect x="3" y="4" width="26" height="22" rx="5" stroke="#E1E7F0" stroke-width="2.2" fill="rgba(225,231,240,0.08)"/>
+                    <polyline points="9 11 14 15 9 19" stroke="#E1E7F0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="17" y1="19" x2="23" y2="19" stroke="#E1E7F0" stroke-width="2.4" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Prompt Engineering</h3>
+                  <p class="tool-card-subtitle">Better AI Outputs</p>
+                </div>
+              </div>
+
+              <!-- 9. Generative AI -->
+              <div class="skill-tool-card" data-tool="generative-ai">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true">
+                    <path d="M6 26L20 12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M22 4l1.8 3.5 3.5 1.8-3.5 1.8-1.8 3.5-1.8-3.5-3.5-1.8 3.5-1.8 1.8-3.5z" fill="#E1E7F0"/>
+                    <path d="M9 8l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z" fill="#8B9BB4"/>
+                    <path d="M24 23l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z" fill="#BFC7D5"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">Generative AI</h3>
+                  <p class="tool-card-subtitle">Creative Workflows</p>
+                </div>
+              </div>
+
+              <!-- 10. LLMs -->
+              <div class="skill-tool-card" data-tool="llms">
+                <div class="tool-icon-box">
+                  <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true">
+                    <circle cx="7" cy="9" r="2.5" fill="#E1E7F0"/>
+                    <circle cx="7" cy="16" r="2.5" fill="#E1E7F0"/>
+                    <circle cx="7" cy="23" r="2.5" fill="#E1E7F0"/>
+                    <circle cx="16" cy="7" r="2.5" fill="#8B9BB4"/>
+                    <circle cx="16" cy="13" r="2.5" fill="#8B9BB4"/>
+                    <circle cx="16" cy="19" r="2.5" fill="#8B9BB4"/>
+                    <circle cx="16" cy="25" r="2.5" fill="#8B9BB4"/>
+                    <circle cx="25" cy="11" r="2.5" fill="#FFFFFF"/>
+                    <circle cx="25" cy="21" r="2.5" fill="#FFFFFF"/>
+                    <path d="M9.5 9l4-2M9.5 9l4 4M9.5 16l4-3M9.5 16l4 3M9.5 23l4-4M9.5 23l4 2M18.5 7l4 4M18.5 13l4-2M18.5 19l4 2M18.5 25l4-4" stroke="rgba(139,155,180,0.55)" stroke-width="1.2"/>
+                  </svg>
+                </div>
+                <div class="tool-card-content">
+                  <h3 class="tool-card-title">LLMs</h3>
+                  <p class="tool-card-subtitle">Large Language Models</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- View AI Projects Pill Button -->
+            <div class="skills-action-row">
+              <a href="#projects" class="skills-view-projects-btn">
+                <span>Explore AI Projects</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <!-- ========================================================
+               SECTION 3: WEB DEVELOPMENT & TOOLS (#web-development)
+               (Pixel-Perfect Match to Attached Reference Image)
+               ======================================================== -->
+          <section class="section web-development-section" id="web-development">
+            <div class="skills-showcase-topbar">
+              <div class="skills-webdev-badge">
+                <span>WEB DEVELOPMENT</span>
+              </div>
+
+              <div class="skills-pagination">
+                <span class="skills-page-counter" aria-label="Category 4 of 5">
+                  <span class="curr-page">04</span>
+                  <span class="slash">/</span>
+                  <span class="total-page">05</span>
+                </span>
+                <div class="skills-arrows">
+                  <button class="skills-nav-arrow-btn" id="devPrevBtn" aria-label="Previous skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button class="skills-nav-arrow-btn" id="devNextBtn" aria-label="Next skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Heading with Interactive Particle Typography: Development and Tools -->
+            <div class="particle-heading-container" id="devHeadingContainer" title="Hover or tap to disperse particles">
+              <h2 class="skills-showcase-heading webdev-showcase-heading" id="devHeading">
+                <span class="heading-neon">Development</span><br>and Tools
+              </h2>
+              <canvas id="devParticleCanvas" class="particle-heading-canvas" aria-hidden="true"></canvas>
+            </div>
+
+            <!-- Subtitle (Matching Reference Image) -->
+            <p class="skills-showcase-description" id="devDescription">
+              Building modern, responsive and high-performance web applications using the latest technologies and tools.
+            </p>
+
+            <!-- 8 Capsule Skill Cards (2 Columns x 4 Rows Matching Reference Image) -->
+            <div class="skills-dev-grid" id="devToolsGrid">
+              <!-- 1. Python -->
+              <div class="skill-dev-card" data-tool="dev-python">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true">
+                    <linearGradient id="dev-card-py-b" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#387eb8" />
+                      <stop offset="100%" stop-color="#366994" />
+                    </linearGradient>
+                    <linearGradient id="dev-card-py-y" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffe873" />
+                      <stop offset="100%" stop-color="#ffd43b" />
+                    </linearGradient>
+                    <path fill="url(#dev-card-py-b)"
+                      d="M63.6 5.8c-28.7 0-26.9 12.4-26.9 12.4l.1 12.8h27.4v3.9H25.8S9 33 9 61.9c0 28.8 14.8 27.8 14.8 27.8h8.8v-12.3s-.5-14.8 14.5-14.8h25.1s13.8.2 13.8-13.3V20s2-14.2-22.4-14.2zm-14.5 8.7c2.9 0 5.2 2.3 5.2 5.2s-2.3 5.2-5.2 5.2-5.2-2.3-5.2-5.2 2.3-5.2 5.2-5.2z" />
+                    <path fill="url(#dev-card-py-y)"
+                      d="M64.4 122.2c28.7 0 26.9-12.4 26.9-12.4l-.1-12.8H63.8v-3.9h38.4s16.8 1.9 16.8-27c0-28.8-14.8-27.8-14.8-27.8h-8.8v12.3s.5 14.8-14.5 14.8H45.8s-13.8-.2-13.8 13.3v29.3s-2 14.2 22.4 14.2zm14.5-8.7c-2.9 0-5.2-2.3-5.2-5.2s2.3-5.2 5.2-5.2 5.2 2.3 5.2 5.2-2.3 5.2-5.2 5.2z" />
+                  </svg>
+                </div>
+                <div class="skill-dev-title">Python</div>
+              </div>
+
+              <!-- 2. Supabase -->
+              <div class="skill-dev-card" data-tool="dev-supabase">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#3ECF8E" aria-hidden="true">
+                    <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">Supabase</div>
+              </div>
+
+              <!-- 3. HTML5 -->
+              <div class="skill-dev-card" data-tool="dev-html5">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 128 128" width="28" height="28" aria-hidden="true">
+                    <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/>
+                    <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/>
+                    <path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/>
+                    <path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">HTML5</div>
+              </div>
+
+              <!-- 4. APIs -->
+              <div class="skill-dev-card" data-tool="dev-apis">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 36 36" width="30" height="30" fill="none" aria-hidden="true">
+                    <path d="M9 25 C5 25 2.5 22 2.5 18 C2.5 14.5 5 11.8 8.5 11.5 C9.8 7.5 13.5 5 18 5 C23 5 27 8.2 27.8 13 C31 13.5 33.5 15.8 33.5 19 C33.5 22.3 30.8 25 27.5 25 Z" stroke="#8B9BB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(139, 155, 180, 0.08)"/>
+                    <circle cx="18" cy="17" r="3.2" stroke="#E1E7F0" stroke-width="2"/>
+                    <path d="M18 11.8v1.6 M18 20.6v1.6 M12.8 17h1.6 M21.6 17h1.6 M14.2 13.2l1.2 1.2 M20.6 19.6l1.2 1.2 M14.2 20.8l1.2-1.2 M20.6 14.4l1.2-1.2" stroke="#E1E7F0" stroke-width="1.8" stroke-linecap="round"/>
+                    <rect x="12" y="14.8" width="12" height="4.4" rx="1.5" fill="#0D1117" stroke="#8B9BB4" stroke-width="0.8"/>
+                    <text x="18" y="18.2" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="3.2" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">API</text>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">APIs</div>
+              </div>
+
+              <!-- 5. CSS3 -->
+              <div class="skill-dev-card" data-tool="dev-css3">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 128 128" width="28" height="28" aria-hidden="true">
+                    <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/>
+                    <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/>
+                    <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/>
+                    <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/>
+                    <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/>
+                    <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">CSS3</div>
+              </div>
+
+              <!-- 6. Antigravity -->
+              <div class="skill-dev-card" data-tool="dev-antigravity">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="card-dev-agy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#A855F7" />
+                        <stop offset="50%" stop-color="#6366F1" />
+                        <stop offset="100%" stop-color="#8B9BB4" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M16 4 L28 26 L22 26 L16 14 L10 26 L4 26 Z" fill="url(#card-dev-agy-grad)"/>
+                    <polygon points="16,18 20,26 12,26" fill="#090B0F"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">Antigravity</div>
+              </div>
+
+              <!-- 7. JavaScript -->
+              <div class="skill-dev-card" data-tool="dev-javascript">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 128 128" width="28" height="28" aria-hidden="true">
+                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/>
+                    <path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">JavaScript</div>
+              </div>
+
+              <!-- 8. VS Code -->
+              <div class="skill-dev-card" data-tool="dev-vscode">
+                <div class="skill-dev-icon-wrap">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#007ACC" aria-hidden="true">
+                    <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                  </svg>
+                </div>
+                <div class="skill-dev-title">VS Code</div>
+              </div>
+            </div>
+
+            <!-- View Web Projects Pill Button -->
+            <div class="skills-action-row">
+              <a href="#projects" class="skills-view-projects-btn">
+                <span>View Web Projects</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <!-- ========================================================
+               SECTION 4: ENGINEERING AND IOT (#engineering-iot)
+               (Pixel-Perfect Match to Attached Reference Image)
+               ======================================================== -->
+          <section class="section engineering-iot-section" id="engineering-iot">
+            <div class="skills-showcase-topbar">
+              <div class="skills-engineering-badge">
+                <span>ENGINEERING</span>
+              </div>
+
+              <div class="skills-pagination">
+                <span class="skills-page-counter" aria-label="Category 5 of 5">
+                  <span class="curr-page">05</span>
+                  <span class="slash">/</span>
+                  <span class="total-page">05</span>
+                </span>
+                <div class="skills-arrows">
+                  <button class="skills-nav-arrow-btn" id="engPrevBtn" aria-label="Previous skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button class="skills-nav-arrow-btn" id="engNextBtn" aria-label="Next skill category">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Heading with Interactive Particle Typography: Engineering and IoT -->
+            <div class="particle-heading-container" id="engHeadingContainer" title="Hover or tap to disperse particles">
+              <h2 class="skills-showcase-heading eng-showcase-heading" id="engHeading">
+                Engineering<br><span class="heading-neon">and IoT</span>
+              </h2>
+              <canvas id="engParticleCanvas" class="particle-heading-canvas" aria-hidden="true"></canvas>
+            </div>
+
+            <!-- Subtitle (Matching Reference Image) -->
+            <p class="skills-showcase-description" id="engDescription">
+              Designing smart systems through mechanical engineering, robotics and connected devices.
+            </p>
+
+            <!-- 8 Capsule Skill Cards (2 Columns x 4 Rows Matching Reference Image) -->
+            <div class="skills-eng-grid" id="engToolsGrid">
+              <!-- 1. AutoCAD -->
+              <div class="skill-eng-card" data-tool="eng-autocad">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/autocad.svg" alt="AutoCAD" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">AutoCAD</div>
+              </div>
+
+              <!-- 2. SolidWorks -->
+              <div class="skill-eng-card" data-tool="eng-solidworks">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/solidworks.svg" alt="SolidWorks" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">SolidWorks</div>
+              </div>
+
+              <!-- 3. Arduino -->
+              <div class="skill-eng-card" data-tool="eng-arduino">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/arduino.svg" alt="Arduino" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">Arduino</div>
+              </div>
+
+              <!-- 4. ESP32 -->
+              <div class="skill-eng-card" data-tool="eng-esp32">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/esp32.svg" alt="ESP32" width="28" height="28" loading="lazy">
+                </div>
+                <div class="skill-eng-title">ESP32</div>
+              </div>
+
+              <!-- 5. IoT Systems -->
+              <div class="skill-eng-card" data-tool="eng-iot">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/iot-systems.svg" alt="IoT Systems" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">IoT Systems</div>
+              </div>
+
+              <!-- 6. Mechanical Design -->
+              <div class="skill-eng-card" data-tool="eng-mechanical">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/mechanical-design.svg" alt="Mechanical Design" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">Mechanical Design</div>
+              </div>
+
+              <!-- 7. Problem Solving -->
+              <div class="skill-eng-card" data-tool="eng-problem-solving">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/problem-solving.svg" alt="Problem Solving" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">Problem Solving</div>
+              </div>
+
+              <!-- 8. Robotics -->
+              <div class="skill-eng-card" data-tool="eng-robotics">
+                <div class="skill-eng-icon-wrap">
+                  <img src="assets/icons/robotics.svg" alt="Robotics" width="30" height="30" loading="lazy">
+                </div>
+                <div class="skill-eng-title">Robotics</div>
+              </div>
+            </div>
+
+            <!-- View Engineering Projects Pill Button -->
+            <div class="skills-action-row">
+              <a href="#projects" class="skills-view-projects-btn">
+                <span>Explore Engineering Projects</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         02. PROJECTS SECTION — 3D FLOATING SHOWCASE
+         ======================================================== -->
+    <section class="section projects-showcase-section" id="projects">
+      <div class="container">
+        <!-- Header & Nav Controls (Reference Image Layout) -->
+        <div class="showcase-header-wrap">
+          <div class="showcase-badge-pill">
+            <span class="badge-dot">✦</span>
+            <span>PROJECTS</span>
+            <span class="badge-dot">✦</span>
+          </div>
+          <h2 class="showcase-main-title">Featured Projects</h2>
+          <p class="showcase-subtitle">A mix of Mechanical, AI and Data projects built with real-world impact.</p>
+
+          <!-- Navigation & Filters Bar -->
+          <div class="showcase-nav-bar">
+            <!-- Filter Pills -->
+            <div class="showcase-filter-pills" role="tablist" aria-label="Project Category Filter">
+              <button type="button" class="showcase-filter-btn active" data-filter="all">All</button>
+              <button type="button" class="showcase-filter-btn" data-filter="robotics">Robotics</button>
+              <button type="button" class="showcase-filter-btn" data-filter="analytics">Data Analytics</button>
+              <button type="button" class="showcase-filter-btn" data-filter="ai">AI</button>
+              <button type="button" class="showcase-filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <!-- Right Controls: Scroll to Explore & Prev/Next Arrows -->
+            <div class="showcase-controls-right">
+              <div class="showcase-scroll-hint" aria-hidden="true">
+                <span>Scroll to explore</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 13l5 5 5-5M12 4v14"></path>
+                </svg>
+              </div>
+              <button type="button" class="showcase-arrow-btn" id="showcasePrevBtn" aria-label="Previous Featured Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button type="button" class="showcase-arrow-btn" id="showcaseNextBtn" aria-label="Next Featured Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Parallax Floating Stage -->
+        <div class="showcase-3d-stage">
+          <!-- Background Concentric Reflective Metallic Podium Platform -->
+          <div class="showcase-podium-platform" aria-hidden="true"></div>
+
+          <!-- Background Floating Polygonal Crystals (Layered Parallax) -->
+          <svg class="parallax-crystal crystal-left" viewBox="0 0 100 100" fill="none" stroke="rgba(225, 231, 240, 0.45)" stroke-width="1.2" aria-hidden="true">
+            <polygon points="50 5, 90 25, 90 75, 50 95, 10 75, 10 25" fill="rgba(17, 21, 28, 0.65)"></polygon>
+            <line x1="50" y1="5" x2="50" y2="95"></line>
+            <line x1="10" y1="25" x2="90" y2="75"></line>
+            <line x1="90" y1="25" x2="10" y2="75"></line>
+          </svg>
+
+          <svg class="parallax-crystal crystal-right" viewBox="0 0 100 100" fill="none" stroke="rgba(191, 199, 213, 0.35)" stroke-width="1.2" aria-hidden="true">
+            <polygon points="50 10, 85 30, 75 80, 25 80, 15 30" fill="rgba(13, 17, 23, 0.65)"></polygon>
+            <line x1="50" y1="10" x2="50" y2="80"></line>
+            <line x1="15" y1="30" x2="85" y2="30"></line>
+          </svg>
+
+          <!-- Floating 3D Cards Track (3 Completed Projects: AI Patrol Robot, Gripper Arm, Resume Maker) -->
+          <div class="showcase-cards-track">
+            <!-- Card 01: AI-Based Security Patrol Robot with Real-Time Monitoring System -->
+            <article class="floating-project-card slot-center card-active" data-index="0" data-category="robotics ai" aria-label="AI-Based Security Patrol Robot">
+              <div class="card-specular-shine" aria-hidden="true"></div>
+
+              <div class="card-top-bar">
+                <span class="card-index-num">01</span>
+                <span class="card-featured-pill">
+                  <svg viewBox="0 0 24 24" fill="currentColor" style="width: 11px; height: 11px;">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <span>Featured</span>
+                </span>
+              </div>
+
+              <div class="card-render-frame">
+                <img src="assets/images/project_patrol_concept_render.jpg" alt="AI-Based Security Patrol Robot Concept Render" class="card-render-img" loading="lazy" draggable="false">
+              </div>
+
+              <div class="card-content-wrap">
+                <div class="card-tags-row">
+                  <span class="card-tag-badge">AI</span>
+                  <span class="card-tag-badge">ESP32-CAM</span>
+                  <span class="card-tag-badge">Robotics</span>
+                </div>
+
+                <h3 class="card-project-title">AI-Based Security Patrol Robot</h3>
+                <p class="card-project-desc">Autonomous robot with live monitoring, obstacle detection, and real-time alerts.</p>
+
+                <div class="card-bottom-actions">
+                  <button type="button" class="btn-card-view-project" data-project-id="patrol-robot">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <a href="https://github.com/Harivansh31" target="_blank" rel="noopener noreferrer" class="btn-card-icon-link" aria-label="GitHub Repository" title="View Source on GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <button type="button" class="btn-card-icon-link" data-project-id="patrol-robot" aria-label="Project Schematics & Specs" title="Hardware Details & Gallery">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 02: Hand Motion Controlled Robotic Gripper Arm -->
+            <article class="floating-project-card slot-right" data-index="1" data-category="robotics tools" aria-label="Hand Motion Controlled Robotic Gripper Arm">
+              <div class="card-specular-shine" aria-hidden="true"></div>
+
+              <div class="card-top-bar">
+                <span class="card-index-num">02</span>
+              </div>
+
+              <div class="card-render-frame">
+                <img src="assets/images/project_gripper_concept_render.jpg" alt="Hand Motion Controlled Robotic Gripper Arm Concept Render" class="card-render-img" loading="lazy" draggable="false">
+              </div>
+
+              <div class="card-content-wrap">
+                <div class="card-tags-row">
+                  <span class="card-tag-badge">Robotics</span>
+                  <span class="card-tag-badge">Arduino</span>
+                  <span class="card-tag-badge">Flex Sensors</span>
+                </div>
+
+                <h3 class="card-project-title">Hand Motion Controlled Robotic Gripper Arm</h3>
+                <p class="card-project-desc">Gesture controlled robotic arm using flex sensors, IMU, and custom 3D-printed kinematics.</p>
+
+                <div class="card-bottom-actions">
+                  <button type="button" class="btn-card-view-project" data-project-id="gripper-arm">
+                    <span>View Project</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <button type="button" class="btn-card-icon-link" data-project-id="gripper-arm" aria-label="CAD Details" title="CAD Assemblies & Hardware Specs">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 03: Resume Maker Platform -->
+            <article class="floating-project-card slot-left" data-index="2" data-category="web tools" aria-label="Resume Maker Platform">
+              <div class="card-specular-shine" aria-hidden="true"></div>
+
+              <div class="card-top-bar">
+                <span class="card-index-num">03</span>
+              </div>
+
+              <div class="card-render-frame">
+                <img src="assets/images/project_resume_concept_render.jpg" alt="Resume Maker Platform Concept Render" class="card-render-img" loading="lazy" draggable="false">
+              </div>
+
+              <div class="card-content-wrap">
+                <div class="card-tags-row">
+                  <span class="card-tag-badge">HTML5</span>
+                  <span class="card-tag-badge">CSS3</span>
+                  <span class="card-tag-badge">JavaScript</span>
+                  <span class="card-tag-badge">PDF Export</span>
+                </div>
+
+                <h3 class="card-project-title">Resume Maker Platform</h3>
+                <p class="card-project-desc">Customizable resume templates, live content editing, typography controls, and PDF export.</p>
+
+                <div class="card-bottom-actions">
+                  <a href="resume-maker/index.html" target="_blank" rel="noopener noreferrer" class="btn-card-view-project" style="background: #FFFFFF; color: #090B0F;">
+                    <span>Launch App</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <button type="button" class="btn-card-icon-link" data-project-id="resume-maker" aria-label="Case Study & Details" title="Project Details & Specs">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <a href="https://github.com/Harivansh31" target="_blank" rel="noopener noreferrer" class="btn-card-icon-link" aria-label="GitHub Repository" title="View Source on GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination Indicator Dots -->
+          <div class="showcase-pagination" role="tablist" aria-label="Project Selection Dots">
+            <button type="button" class="showcase-page-dot active" data-index="0" aria-label="Project 1: AI Security Patrol Robot"></button>
+            <button type="button" class="showcase-page-dot" data-index="1" aria-label="Project 2: Robotic Gripper Arm"></button>
+            <button type="button" class="showcase-page-dot" data-index="2" aria-label="Project 3: Resume Maker Platform"></button>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             COMING SOON // PROJECTS IN DEVELOPMENT
+             ========================================== -->
+        <div class="coming-soon-block">
+          <div class="coming-soon-header">
+            <div class="cs-header-left">
+              <span class="cs-header-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </span>
+              <div>
+                <h3 class="cs-header-title">Projects in Development</h3>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0.2rem 0 0 0;">Upcoming predictive analytics pipelines, AI conversational workflows & systems.</p>
+              </div>
+            </div>
+            <span class="cs-counter-pill">07 PROJECTS</span>
+          </div>
+
+          <!-- Coming Soon Cards Grid (7 High-Definition Project Previews) -->
+          <div class="coming-soon-grid">
+            <!-- 1: AI-Powered Automated Data Analysis -->
+            <article class="coming-soon-card" data-category="ai analytics">
+              <div class="cs-card-media">
+                <img src="assets/images/project_ai_data_analysis.jpg" alt="AI-Powered Automated Data Analysis" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">AI-Powered Automated Data Analysis</h4>
+                  <p class="cs-card-desc">An automated data analysis and visualization pipeline using n8n workflows and Claude AI to transform raw data into meaningful insights, reports, and visualizations.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">n8n</span>
+                    <span class="cs-tag">Claude AI</span>
+                    <span class="cs-tag">Python</span>
+                    <span class="cs-tag">Data Analysis</span>
+                    <span class="cs-tag">Automation</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2: Financial Transaction & Fraud Analytics -->
+            <article class="coming-soon-card" data-category="analytics">
+              <div class="cs-card-media">
+                <img src="assets/images/project_fraud_analytics.png" alt="Financial Transaction & Fraud Analytics" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">Financial Transaction & Fraud Analytics</h4>
+                  <p class="cs-card-desc">Transaction patterns, suspicious activity, fraud trends, and financial loss analysis.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">Python</span>
+                    <span class="cs-tag">SQL</span>
+                    <span class="cs-tag">Power BI</span>
+                    <span class="cs-tag">Anomaly Detection</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2: Marketing Campaign & Customer Acquisition Analytics -->
+            <article class="coming-soon-card" data-category="analytics">
+              <div class="cs-card-media">
+                <img src="assets/images/project_marketing_analytics.png" alt="Marketing Campaign & Customer Acquisition Analytics" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">Marketing Campaign & Customer Acquisition</h4>
+                  <p class="cs-card-desc">Campaign ROI, conversion rates, CAC, and multi-channel marketing performance.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">SQL</span>
+                    <span class="cs-tag">Excel</span>
+                    <span class="cs-tag">Power BI</span>
+                    <span class="cs-tag">Marketing Analytics</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3: Manufacturing & Production Performance Analytics -->
+            <article class="coming-soon-card" data-category="analytics">
+              <div class="cs-card-media">
+                <img src="assets/images/project_manufacturing_analytics.jpg" alt="Manufacturing & Production Performance Analytics" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">Manufacturing & Production Performance</h4>
+                  <p class="cs-card-desc">Production downtime, OEE, rejection rate, and machine utilization metrics.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">Excel</span>
+                    <span class="cs-tag">SQL</span>
+                    <span class="cs-tag">Python</span>
+                    <span class="cs-tag">OEE</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4: E-Commerce Data Analysis (Power BI) -->
+            <article class="coming-soon-card" data-category="analytics">
+              <div class="cs-card-media">
+                <img src="assets/images/project_ecommerce_analytics.png" alt="E-Commerce Data Analysis" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">E-Commerce Data Analysis (Power BI)</h4>
+                  <p class="cs-card-desc">Sales, revenue, profitability, customer cohorts, and DAX metric modeling.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">Power BI</span>
+                    <span class="cs-tag">SQL</span>
+                    <span class="cs-tag">Python</span>
+                    <span class="cs-tag">DAX</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5: AI-Powered WhatsApp Chatbot -->
+            <article class="coming-soon-card" data-category="ai">
+              <div class="cs-card-media">
+                <img src="assets/images/project_whatsapp_bot_new.jpg" alt="AI-Powered WhatsApp Chatbot" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">AI-Powered WhatsApp Chatbot</h4>
+                  <p class="cs-card-desc">Automated customer queries, generative AI responses, and API webhook automation.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">Python</span>
+                    <span class="cs-tag">Generative AI</span>
+                    <span class="cs-tag">WhatsApp API</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6: Himalaya Travel & Stay Platform -->
+            <article class="coming-soon-card" data-category="web">
+              <div class="cs-card-media">
+                <img src="assets/images/project_himalaya_travel.jpg" alt="Himalaya Travel & Stay Platform" class="cs-card-img" loading="lazy">
+                <div class="cs-status-tag">
+                  <span class="cs-status-dot"></span>
+                  <span>IN DEVELOPMENT</span>
+                </div>
+              </div>
+              <div class="cs-card-body">
+                <div>
+                  <h4 class="cs-card-title">Himalaya Travel & Stay Platform</h4>
+                  <p class="cs-card-desc">Himalayan destinations, verified stays, travel routes, and curated route booking.</p>
+                </div>
+                <div>
+                  <div class="cs-tags-row">
+                    <span class="cs-tag">React</span>
+                    <span class="cs-tag">Node.js</span>
+                    <span class="cs-tag">MongoDB</span>
+                    <span class="cs-tag">Travel API</span>
+                  </div>
+                  <button type="button" class="btn-cs-status" aria-label="Project in Development Phase">
+                    <span class="cs-status-indicator-dot"></span>
+                    <span>In Development Phase</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ========================================================
+         03. EXPERIENCE & VIRTUAL SIMULATIONS SECTION
+         ======================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <!-- Section Introduction -->
+        <div class="section-header">
+          <span class="section-tag">03. EXPERIENCE // PROFESSIONAL JOURNEY</span>
+          <h2 class="section-title">Experience & Virtual Simulations</h2>
+          <p class="section-subtitle">Professional learning, practical data analytics projects,
+            industry job simulations, and university leadership experience.</p>
+        </div>
+
+
+        <!-- Experience Split-Card Timeline -->
+        <div class="exp-timeline-wrapper">
+          <div class="exp-timeline-spine" aria-hidden="true"></div>
+
+          <!-- Card 1: BharatCares -->
+          <div class="exp-timeline-item" id="exp-item-bharatcares">
+            <div class="exp-timeline-node" aria-hidden="true">
+              <div class="exp-timeline-node-core"></div>
+            </div>
+            <div class="exp-timeline-arm" aria-hidden="true"></div>
+
+            <div class="exp-split-card">
+              <!-- Left Region: Media Visual -->
+              <div class="exp-card-media" style="cursor: pointer;" data-cert-view="bharatcares-internship" title="Click to view certificate">
+                <img src="assets/images/exp_bharatcares_analytics.jpg" alt="Data Analytics Dashboard on Industrial Laptop Workspace" class="exp-card-img" loading="lazy">
+                <div class="exp-card-media-overlay" aria-hidden="true"></div>
+                <span class="exp-category-pill">
+                  <span class="exp-category-pill-indicator"></span>
+                  INTERNSHIP
+                </span>
+                <div class="exp-media-caption">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  <span>Analytics Workflow & Prep</span>
+                </div>
+              </div>
+
+              <!-- Right Region: Structured Content -->
+              <div class="exp-card-content">
+                <div>
+                  <div class="exp-card-header">
+                    <h3 class="exp-role-title">Data Analytics Intern</h3>
+                    <span class="exp-period-pill">August 2026 – September 2026</span>
+                  </div>
+                  <div class="exp-company-line">
+                    <svg viewBox="0 0 24 24" class="exp-company-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>BharatCares · IBM SkillsBuild Internship Program</span>
+                  </div>
+                  <ul class="exp-bullet-list">
+                    <li class="exp-bullet-item">
+                      Completed structured learning modules through IBM SkillsBuild, followed by masterclasses focused on practical data analytics concepts.
+                    </li>
+                    <li class="exp-bullet-item">
+                      Learned the data analytics workflow, including data preparation, analysis, visualization, and presentation of analytical findings.
+                    </li>
+                    <li class="exp-bullet-item">
+                      Developed a project applying concepts learned during the program to a practical data analytics problem.
+                    </li>
+                  </ul>
+                </div>
+                <div class="exp-tag-row">
+                  <span class="exp-tech-chip">Data Preparation</span>
+                  <span class="exp-tech-chip">Exploratory Data Analysis</span>
+                  <span class="exp-tech-chip">Data Visualization</span>
+                  <span class="exp-tech-chip">Analytics Workflow</span>
+                  <span class="exp-tech-chip">IBM SkillsBuild</span>
+                </div>
+
+                <!-- Integrated Certificate Bar Visible Directly on Box -->
+                <div class="exp-card-cert-bar">
+                  <div class="exp-cert-badge-info">
+                    <svg viewBox="0 0 24 24" class="exp-cert-badge-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                    <span>VERIFIED CERTIFICATE // ID: IBMACBHDAI2875</span>
+                  </div>
+                  <div class="exp-cert-actions">
+                    <button type="button" class="btn-cert-action btn-cert-primary" data-cert-view="bharatcares-internship">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      View Certificate
+                    </button>
+                    <a href="assets/certificates/bharatcares_ibm_internship_cert.pdf" download="Harivansh_Vats_BharatCares_AICTE_IBM_Internship_Certificate.pdf" class="btn-cert-action btn-cert-secondary" data-cert-download data-cert-title="BharatCares AICTE IBM Internship Certificate">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                      Download PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Deloitte Forage -->
+          <div class="exp-timeline-item" id="exp-item-deloitte">
+            <div class="exp-timeline-node" aria-hidden="true">
+              <div class="exp-timeline-node-core"></div>
+            </div>
+            <div class="exp-timeline-arm" aria-hidden="true"></div>
+
+            <div class="exp-split-card">
+              <!-- Left Region: Media Visual -->
+              <div class="exp-card-media" style="cursor: pointer;" data-cert-view="deloitte-simulation" title="Click to view certificate">
+                <img src="assets/images/exp_deloitte_simulation.jpg" alt="Deloitte Corporate Headquarters Architecture" class="exp-card-img" loading="lazy">
+                <div class="exp-card-media-overlay" aria-hidden="true"></div>
+                <span class="exp-category-pill">
+                  <span class="exp-category-pill-indicator"></span>
+                  VIRTUAL EXPERIENCE
+                </span>
+                <div class="exp-media-caption">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                  <span>Tableau Telemetry Modeling</span>
+                </div>
+              </div>
+
+              <!-- Right Region: Structured Content -->
+              <div class="exp-card-content">
+                <div>
+                  <div class="exp-card-header">
+                    <h3 class="exp-role-title">Deloitte Data Analytics Job Simulation</h3>
+                    <span class="exp-period-pill">Virtual Experience</span>
+                  </div>
+                  <div class="exp-company-line">
+                    <svg viewBox="0 0 24 24" class="exp-company-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>Deloitte · Forage Virtual Experience</span>
+                  </div>
+                  <ul class="exp-bullet-list">
+                    <li class="exp-bullet-item">
+                      Analyzed factory telemetry data to explore equipment downtime patterns and compare operational performance across factories and device types.
+                    </li>
+                    <li class="exp-bullet-item">
+                      Developed an interactive Tableau dashboard to visualize downtime metrics and support operational data analysis.
+                    </li>
+                    <li class="exp-bullet-item">
+                      Applied Excel-based analysis and logical classification techniques to organize findings and support business interpretation.
+                    </li>
+                  </ul>
+                </div>
+                <div class="exp-tag-row">
+                  <span class="exp-tech-chip">Tableau Dashboarding</span>
+                  <span class="exp-tech-chip">Factory Telemetry</span>
+                  <span class="exp-tech-chip">Downtime Analysis</span>
+                  <span class="exp-tech-chip">Excel Classification</span>
+                  <span class="exp-tech-chip">Forage Simulation</span>
+                </div>
+
+                <!-- Integrated Certificate Bar Visible Directly on Box -->
+                <div class="exp-card-cert-bar">
+                  <div class="exp-cert-badge-info">
+                    <svg viewBox="0 0 24 24" class="exp-cert-badge-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>FORAGE COMPLETION // ENROLMENT: EKXFZ3kbEPNZcdYm4</span>
+                  </div>
+                  <div class="exp-cert-actions">
+                    <button type="button" class="btn-cert-action btn-cert-primary" data-cert-view="deloitte-simulation">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      View Certificate
+                    </button>
+                    <a href="assets/certificates/deloitte_data_analytics_simulation_cert.png" download="Harivansh_Vats_Deloitte_Data_Analytics_Simulation_Certificate.png" class="btn-cert-action btn-cert-secondary" data-cert-download data-cert-title="Deloitte Data Analytics Simulation Certificate">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                      Download Image
+                    </a>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Deloitte%20Australia/EKXFZ3kbEPNZcdYm4_Deloitte_696aa9638d5b9c666d209bf9_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-action btn-cert-verify">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                      </svg>
+                      Verify
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Leadership Roles -->
+          <div class="exp-timeline-item" id="exp-item-leadership">
+            <div class="exp-timeline-node" aria-hidden="true">
+              <div class="exp-timeline-node-core"></div>
+            </div>
+            <div class="exp-timeline-arm" aria-hidden="true"></div>
+
+            <div class="exp-split-card">
+              <!-- Left Region: Media Visual -->
+              <div class="exp-card-media">
+                <img src="assets/images/exp_leadership_campus.jpg" alt="DCRUST Murthal University Campus Building and Grounds" class="exp-card-img" loading="lazy">
+                <div class="exp-card-media-overlay" aria-hidden="true"></div>
+                <span class="exp-category-pill">
+                  <span class="exp-category-pill-indicator"></span>
+                  LEADERSHIP
+                </span>
+                <div class="exp-media-caption">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>DCRUST Campus & Coordination</span>
+                </div>
+              </div>
+
+              <!-- Right Region: Structured Content -->
+              <div class="exp-card-content">
+                <div>
+                  <div class="exp-card-header">
+                    <h3 class="exp-role-title">Leadership & Campus Engagement</h3>
+                    <span class="exp-period-pill">2023 – 2027</span>
+                  </div>
+                  <div class="exp-company-line">
+                    <svg viewBox="0 0 24 24" class="exp-company-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>DCRUST, Murthal · University Activities</span>
+                  </div>
+                  <ul class="exp-bullet-list">
+                    <li class="exp-bullet-item">
+                      <strong>Engineering Design & Project Lead:</strong> Coordinated engineering design activities, team collaboration, and project development and prototyping milestones.
+                    </li>
+                    <li class="exp-bullet-item">
+                      <strong>Cultural Event Coordinator:</strong> Contributed to event planning, stage coordination, and participant management.
+                    </li>
+                    <li class="exp-bullet-item">
+                      <strong>University-Level Gaming Event Coordinator:</strong> Supported esports tournament logistics, coordination, and on-ground event execution.
+                    </li>
+                  </ul>
+                </div>
+                <div class="exp-tag-row">
+                  <span class="exp-tech-chip">Engineering Design Lead</span>
+                  <span class="exp-tech-chip">Hardware Prototyping</span>
+                  <span class="exp-tech-chip">Cross-Functional Teamwork</span>
+                  <span class="exp-tech-chip">Event Logistics</span>
+                </div>
+
+                <!-- Integrated Status Bar on Box -->
+                <div class="exp-card-cert-bar">
+                  <div class="exp-cert-badge-info">
+                    <svg viewBox="0 0 24 24" class="exp-cert-badge-icon" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>CAMPUS LEADERSHIP // DCRUST MURTHAL</span>
+                  </div>
+                  <div class="exp-cert-actions">
+                    <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-tertiary); letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 6px;">
+                      <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--subtle-highlight);"></span>
+                      Active B.Tech (2023–2027)
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         04. CERTIFICATES & CREDENTIALS SECTION
+         ======================================================== -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-header">
+          <span class="section-tag">CREDENTIALS // PROFESSIONAL DEVELOPMENT</span>
+          <h2 class="section-title">Certificates &amp; Credentials</h2>
+          <p class="section-subtitle">Professional certifications, industry learning programs,
+            and credentials documenting my technical development.</p>
+        </div>
+
+        <!-- Certificate Gallery Grid - 8 Cards in Exact Specified Order -->
+        <div class="cert-gallery-grid">
+          <!-- 01. Oracle -->
+          <div class="cert-gallery-card" id="card-cert-oracle">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-ORACLE-001" title="Click to view Oracle certificate">
+              <span class="cert-order-badge">01 // ORACLE</span>
+              <img src="assets/certificates/CERT-ORACLE-001_preview.png" alt="Oracle Certified Foundations Associate - Agentic AI" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Cloud &amp; Agentic AI</span>
+                <h3 class="cert-card-title">Oracle Certified Foundations Associate</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="M9 12l2 2 4-4"></path>
+                  </svg>
+                  <span>Oracle University</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 10, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-ORACLE-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/Oracle-Agentic-AI-Certification.pdf" download="Oracle-Agentic-AI-Certification.pdf" class="btn-cert-card btn-cert-card-dl" title="Download Oracle Certification PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=025AC840356463883DCACA8B494FA6C9E9D70BFF32D7516FC2900D28A2B4FC83" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify Oracle Certification on CertView">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02. BharatCares -->
+          <div class="cert-gallery-card" id="card-cert-bharatcares">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-BHARATCARES-001" title="Click to view BharatCares certificate">
+              <span class="cert-order-badge">02 // BHARATCARES</span>
+              <img src="assets/certificates/CERT-BHARATCARES-001_preview.png" alt="IBM SkillsBuild Data Analytics with AI Internship Program Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Internship &amp; Applied Analytics</span>
+                <h3 class="cert-card-title">IBM SkillsBuild Data Analytics with AI Internship</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>BharatCares · AICTE &amp; IBM SkillsBuild</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Aug 17, 2026 – Sep 30, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-BHARATCARES-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions has-single-action">
+                  <a href="assets/certificates/BharatCares-Data-Analytics-Internship.pdf" download="BharatCares-Data-Analytics-Internship.pdf" class="btn-cert-card btn-cert-card-dl" title="Download BharatCares Internship PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03. Deloitte -->
+          <div class="cert-gallery-card" id="card-cert-deloitte">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-DELOITTE-001" title="Click to view Deloitte certificate">
+              <span class="cert-order-badge">03 // DELOITTE</span>
+              <img src="assets/certificates/CERT-DELOITTE-001_preview.png" alt="Deloitte Data Analytics Job Simulation Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Virtual Job Simulation</span>
+                <h3 class="cert-card-title">Data Analytics Job Simulation</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                  <span>Deloitte · Forage Virtual Experience</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 7, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-DELOITTE-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions has-single-action">
+                  <a href="assets/certificates/Deloitte-Data-Analytics-Job-Simulation.pdf" download="Deloitte-Data-Analytics-Job-Simulation.pdf" class="btn-cert-card btn-cert-card-dl" title="Download Deloitte Job Simulation PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04. Google / Coursera -->
+          <div class="cert-gallery-card" id="card-cert-google">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-COURSERA-GOOGLE-001" title="Click to view Google certificate">
+              <span class="cert-order-badge">04 // GOOGLE</span>
+              <img src="assets/certificates/CERT-COURSERA-GOOGLE-001_preview.png" alt="Google Foundations of Data Science Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Data Science Specialization</span>
+                <h3 class="cert-card-title">Foundations of Data Science</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                  <span>Google, offered through Coursera</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>May 13, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-COURSERA-GOOGLE-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/Google-Foundations-of-Data-Science.pdf" download="Google-Foundations-of-Data-Science.pdf" class="btn-cert-card btn-cert-card-dl" title="Download Google Foundations of Data Science PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://coursera.org/verify/A2D73H85QK52" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify Google Credential on Coursera">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05. IBM / Coursera -->
+          <div class="cert-gallery-card" id="card-cert-ibm">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-COURSERA-IBM-001" title="Click to view IBM certificate">
+              <span class="cert-order-badge">05 // IBM</span>
+              <img src="assets/certificates/CERT-COURSERA-IBM-001_preview.png" alt="IBM Python for Data Science, AI & Development Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Programming &amp; AI Development</span>
+                <h3 class="cert-card-title">Python for Data Science, AI &amp; Development</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span>IBM, offered through Coursera</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>April 8, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-COURSERA-IBM-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/IBM-Python-for-Data-Science-AI-Development.pdf" download="IBM-Python-for-Data-Science-AI-Development.pdf" class="btn-cert-card btn-cert-card-dl" title="Download IBM Python for Data Science PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://coursera.org/verify/41NMJV73YOBF" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify IBM Credential on Coursera">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06. AI Fluency for Builders -->
+          <div class="cert-gallery-card" id="card-cert-aifluency">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-ANTHROPIC-AIFLUENCY-001" title="Click to view AI Fluency for Builders certificate">
+              <span class="cert-order-badge">06 // ANTHROPIC</span>
+              <img src="assets/certificates/CERT-ANTHROPIC-AIFLUENCY-001_preview.png" alt="AI Fluency for Builders Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Generative AI &amp; LLMs</span>
+                <h3 class="cert-card-title">AI Fluency for Builders</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  <span>CodePath.org &amp; Anthropic Education</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 7, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-ANTHROPIC-AIFLUENCY-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/AI-Fluency-for-Builders.pdf" download="AI-Fluency-for-Builders.pdf" class="btn-cert-card btn-cert-card-dl" title="Download AI Fluency for Builders PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://verify.skilljar.com/c/stg2qukqg5ha" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify AI Fluency Credential on Skilljar">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07. Simplilearn — Generative AI Studio -->
+          <div class="cert-gallery-card" id="card-cert-simplilearn">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-SIMPLILEARN-GENAI-001" title="Click to view Simplilearn certificate">
+              <span class="cert-order-badge">07 // SIMPLILEARN</span>
+              <img src="assets/certificates/CERT-SIMPLILEARN-GENAI-001_preview.png" alt="Introduction to Generative AI Studio Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">Generative AI &amp; Cloud</span>
+                <h3 class="cert-card-title">Introduction to Generative AI Studio</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  <span>Simplilearn · Google Cloud SkillUp</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>15th January 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-SIMPLILEARN-GENAI-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/Simplilearn-Generative-AI-Studio.pdf" download="Simplilearn-Generative-AI-Studio.pdf" class="btn-cert-card btn-cert-card-dl" title="Download Simplilearn Certificate PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://simpli.app.link/bI3HZoUiZ3b" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify Simplilearn Credential">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08. Claude 101 -->
+          <div class="cert-gallery-card" id="card-cert-claude101">
+            <div class="cert-card-preview-wrap" data-cert-preview-id="CERT-ANTHROPIC-CLAUDE101-001" title="Click to view Claude 101 certificate">
+              <span class="cert-order-badge">08 // ANTHROPIC</span>
+              <img src="assets/certificates/CERT-ANTHROPIC-CLAUDE101-001_preview.png" alt="Claude 101 Certificate" class="cert-card-preview-img" loading="lazy">
+              <div class="cert-preview-hover-chip" aria-hidden="true">
+                <span class="cert-hover-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  View Certificate
+                </span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-card-top-info">
+                <span class="cert-category-chip">AI Architecture &amp; LLMs</span>
+                <h3 class="cert-card-title">Claude 101</h3>
+                <div class="cert-card-issuer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Anthropic Education</span>
+                </div>
+                <div class="cert-card-meta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 7, 2026</span>
+                </div>
+              </div>
+              <div class="cert-card-actions">
+                <button type="button" class="btn-cert-card btn-cert-card-view" data-cert-open="CERT-ANTHROPIC-CLAUDE101-001">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>View Certificate</span>
+                </button>
+                <div class="cert-card-sub-actions">
+                  <a href="assets/certificates/Anthropic-Claude-101.pdf" download="Anthropic-Claude-101.pdf" class="btn-cert-card btn-cert-card-dl" title="Download Claude 101 Certificate PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download PDF</span>
+                  </a>
+                  <a href="https://verify.skilljar.com/c/zy6joykye7ow" target="_blank" rel="noopener noreferrer" class="btn-cert-card btn-cert-card-verify" title="Verify Claude 101 Credential on Skilljar">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Verify Credential</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         05. CONTACT SECTION
+         ======================================================== -->
+    <section class="section contact-section-redesign" id="contact">
+      <!-- 3D Perspective Grid-Wave Wireframe Ambient Background -->
+      <div class="contact-wireframe-bg" aria-hidden="true"></div>
+
+      <div class="container contact-container">
+        <div class="contact-layout">
+          <!-- Left Column: Information, Direct Details & Social Links -->
+          <div class="contact-left-col">
+            <!-- Eyebrow: CONTACT ── -->
+            <div class="contact-eyebrow">
+              <span class="contact-eyebrow-text">CONTACT</span>
+              <span class="contact-eyebrow-line"></span>
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="contact-main-heading">
+              Let's Connect &amp; <span class="contact-heading-highlight">Collaborate</span>
+            </h2>
+
+            <!-- Domains Subtitle -->
+            <p class="contact-domains-text">
+              Open to opportunities in Data Analytics, Business Intelligence, Generative AI, Agentic AI &amp; Web Development.
+            </p>
+
+            <!-- Description -->
+            <p class="contact-description">
+              I'm always open to discussing new opportunities, interesting projects, or ideas where I can contribute and learn. Feel free to reach out through any of the channels below.
+            </p>
+
+            <!-- Direct Contact Detail Cards with 1-Click Copy -->
+            <div class="contact-details-list">
+              <!-- Email Card -->
+              <div class="contact-detail-card" id="contactDetailEmail" data-copy="harivanshvats@gmail.com" role="button" tabindex="0" title="Click to copy email">
+                <div class="contact-detail-icon-wrap" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail-content">
+                  <span class="contact-detail-value">harivanshvats@gmail.com</span>
+                </div>
+                <button type="button" class="contact-copy-btn" aria-label="Copy email address" title="Copy email">
+                  <svg class="copy-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-detail-card" id="contactDetailPhone" data-copy="+91 7011863224" role="button" tabindex="0" title="Click to copy phone number">
+                <div class="contact-detail-icon-wrap" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail-content">
+                  <span class="contact-detail-value">+91 7011863224</span>
+                </div>
+                <button type="button" class="contact-copy-btn" aria-label="Copy phone number" title="Copy phone">
+                  <svg class="copy-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-detail-card" id="contactDetailLocation" data-copy="Faridabad, Haryana, India" role="button" tabindex="0" title="Click to copy location">
+                <div class="contact-detail-icon-wrap" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-detail-content">
+                  <span class="contact-detail-value">Faridabad, Haryana, India</span>
+                </div>
+                <button type="button" class="contact-copy-btn" aria-label="Copy location" title="Copy location">
+                  <svg class="copy-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Action Buttons (Only LinkedIn and GitHub) -->
+            <div class="contact-actions-row">
+              <a href="https://www.linkedin.com/in/harivansh-vats-b00a722a4" target="_blank" rel="noopener noreferrer" class="contact-action-btn" id="contactLinkedinBtn">
+                <svg class="contact-action-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                </svg>
+                <span class="contact-action-label">LinkedIn</span>
+                <svg class="contact-action-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://github.com/Harivansh31" target="_blank" rel="noopener noreferrer" class="contact-action-btn" id="contactGithubBtn">
+                <svg class="contact-action-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span class="contact-action-label">GitHub</span>
+                <svg class="contact-action-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: 3D Holographic Globe & Floating Skill Badges -->
+          <div class="contact-right-col">
+            <div class="contact-globe-container" id="contactGlobeWrapper">
+              <!-- Three.js Interactive WebGL Holographic Globe -->
+              <canvas id="contactGlobeCanvas"></canvas>
+
+              <!-- Concentric Pedestal Glow Base -->
+              <div class="contact-globe-pedestal" aria-hidden="true"></div>
+
+              <!-- Floating Skill Card 1: Data Analytics & BI (Top Left) -->
+              <div class="floating-contact-badge badge-top-left" data-badge="analytics">
+                <div class="badge-icon-wrap" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <span class="badge-label">Data Analytics &amp; BI</span>
+              </div>
+
+              <!-- Floating Skill Card 2: Generative AI & Agentic AI (Top Right) -->
+              <div class="floating-contact-badge badge-top-right" data-badge="genai">
+                <div class="badge-icon-wrap" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+                    <line x1="9" y1="21" x2="15" y2="21"></line>
+                    <path d="M12 6v4"></path>
+                    <path d="M10 8h4"></path>
+                  </svg>
+                </div>
+                <span class="badge-label">Generative AI &amp; Agentic AI</span>
+              </div>
+
+              <!-- Floating Skill Card 3: Web Development (Bottom Left) -->
+              <div class="floating-contact-badge badge-bottom-left" data-badge="webdev">
+                <div class="badge-icon-wrap" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span class="badge-label">Web Development</span>
+              </div>
+
+              <!-- Floating Skill Card 4: Open to Opportunities (Bottom Right) -->
+              <div class="floating-contact-badge badge-bottom-right" data-badge="opportunities">
+                <div class="badge-icon-wrap" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <span class="badge-label">Open to Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         FOOTER
+         ======================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#home" class="brand-logo" aria-label="Harivansh Vats Home">
+              <img src="assets/images/hv_logo_new.png" alt="HV Logo" width="52" height="36">
+            </a>
+            <p class="footer-desc">© 2026 Harivansh Vats. All rights reserved.</p>
+            <div class="footer-status-pill">
+              <span class="scan-pulse-dot"></span>
+              <span>ALL SYSTEMS OPERATIONAL // V2.6</span>
+            </div>
+          </div>
+
+          <div class="footer-actions">
+            <a href="#home" class="btn-back-to-top" id="backToTopBtn">
+              <span>Back To Top</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Dynamic Cyber Modal Backdrop -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-window" id="modalWindow">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+      <div id="modalDynamicContent"></div>
+    </div>
+  </div>
+
+  <!-- Cyber Toast Notification -->
+  <div class="cyber-toast" id="cyberToast" role="alert" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span class="toast-message" id="toastMessage">TRANSMISSION CONFIRMED</span>
+  </div>
+
+  <!-- ========================================================
+       COMMAND PALETTE MODAL (Cmd+K / Ctrl+K)
+       ======================================================== -->
+  <div class="cmd-palette-backdrop" id="commandPaletteModal" role="dialog" aria-modal="true" aria-label="Command Menu">
+    <div class="cmd-palette-window">
+      <!-- Search Input Header -->
+      <div class="cmd-palette-header">
+        <svg class="cmd-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="cmd-palette-input" id="cmdPaletteInput"
+          placeholder="Type a command or jump to section..." autocomplete="off" spellcheck="false">
+        <span class="cmd-header-esc">ESC</span>
+        <button type="button" class="cmd-palette-close" id="cmdPaletteClose" aria-label="Close command menu">✕</button>
+      </div>
+
+      <!-- Command List Groupings -->
+      <div class="cmd-palette-list" id="cmdPaletteList" role="listbox"></div>
+
+      <!-- Keyboard Navigation Hints Footer -->
+      <div class="cmd-palette-footer">
+        <div class="cmd-footer-hints">
+          <div class="cmd-hint-item">
+            <kbd>↑</kbd><kbd>↓</kbd> <span>Navigate</span>
+          </div>
+          <div class="cmd-hint-item">
+            <kbd>↵</kbd> <span>Select</span>
+          </div>
+          <div class="cmd-hint-item">
+            <kbd>esc</kbd> <span>Close</span>
+          </div>
+        </div>
+        <div>HARIVANSH_CORE // V2.6</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Entry -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Background Demo | 3D Solar System | Harivansh Vats</title>
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="./css/demo-background.css">
+</head>
+<body>
+
+  <!-- Fullscreen WebGL Canvas Container -->
+  <div id="webglCanvasContainer">
+    <canvas id="spaceCanvas"></canvas>
+  </div>
+
+  <!-- Cinematic Vignette & Organic Film Grain -->
+  <div class="cinema-vignette"></div>
+  <div class="cinema-grain"></div>
+
+  <!-- Minimal Interactive Test HUD Overlay -->
+  <div class="demo-hud-overlay">
+    
+    <!-- Top Bar: Brand & Live Status -->
+    <header class="demo-top-bar">
+      <div class="demo-brand">
+        <div class="demo-badge-logo">HV<span>.3D</span></div>
+        <div class="demo-tagline">HERO BACKGROUND LAB</div>
+      </div>
+      
+      <div class="demo-status-pill">
+        <div class="status-beacon idle" id="statusBeacon"></div>
+        <div class="status-text" id="statusText">Status: <span>Idle (Completely Still)</span></div>
+      </div>
+    </header>
+
+    <!-- Center Guide Pill (Dims automatically on mouse interaction) -->
+    <div class="demo-center-guide" id="centerGuide">
+      <svg class="guide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 6v6l4 2"></path>
+      </svg>
+      <div class="guide-title">Interactive Parallax Space Environment</div>
+      <p class="guide-desc">Move your cursor to dynamically tilt & shift perspective across planets, rings, and asteroids. When mouse stops, the entire scene freezes completely.</p>
+      <span class="guide-spec">ZERO AUTO-ANIMATION // STRICT MOUSE INTERPOLATION</span>
+    </div>
+
+    <!-- Bottom Bar: Telemetry & Interactive Actions -->
+    <footer class="demo-bottom-bar">
+      <div class="demo-telemetry-cluster">
+        <div class="telemetry-row">
+          <span>MOTION DELTA:</span>
+          <span class="val" id="telemetryDelta">0.00% (STILL)</span>
+        </div>
+        <div class="telemetry-row">
+          <span>CURSOR COORDS:</span>
+          <span class="val" id="telemetryCoords">X: 0.000 | Y: 0.000</span>
+        </div>
+        <div class="telemetry-row">
+          <span>BODIES:</span>
+          <span class="val">SUN // CYBER EARTH // SATURN // JUPITER // 3 MOONS // ASTEROID BELT</span>
+        </div>
+      </div>
+
+      <div class="demo-controls-cluster">
+        <a href="index.html" class="demo-btn">
+          <span>← Back to Website</span>
+        </a>
+        <button type="button" class="demo-btn demo-btn-primary" id="recenterBtn">
+          <span>Recenter Universe</span>
+        </button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Three.js Procedural Background Module -->
+  <script type="module" src="./js/demo-background.js"></script>
+
+</body>
+</html>

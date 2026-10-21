@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%" fill="none">
+  <!-- Lightbulb outline -->
+  <path d="M17 31 C15 28 13 24 13 19 C13 12.9 17.9 8 24 8 C30.1 8 35 12.9 35 19 C35 24 33 28 31 31 L17 31 Z" fill="rgba(139, 155, 180, 0.12)" stroke="#E1E7F0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Base Threads -->
+  <line x1="19" y1="36" x2="29" y2="36" stroke="#8B9BB4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="21" y1="40" x2="27" y2="40" stroke="#8B9BB4" stroke-width="2" stroke-linecap="round"/>
+  <!-- Filament -->
+  <path d="M21 24 L24 16 L27 24" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Glowing Idea Rays -->
+  <line x1="24" y1="2" x2="24" y2="5" stroke="#BFC7D5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="9" y1="9" x2="11.5" y2="11.5" stroke="#BFC7D5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="39" y1="9" x2="36.5" y2="11.5" stroke="#BFC7D5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="3" y1="19" x2="7" y2="19" stroke="#BFC7D5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="45" y1="19" x2="41" y2="19" stroke="#BFC7D5" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
